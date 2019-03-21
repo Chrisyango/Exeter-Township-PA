@@ -285,6 +285,19 @@ nav,
 #search button {font-family: 'CenturyGothic'; position: absolute; top: 0; right: 0; font-size: 24px; letter-spacing: 0.005em; width: 100px; height: 100px; line-height: 100px; text-align: center; text-transform: uppercase; padding: 0; color: #0a5055!important; background-color: #fff;}
 
 
+/*--------------- #lwp ---------------*/
+#lwp {position: relative; height: 830px; padding-top: 160px;}
+#lwp .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.75;}
+#lwp .whitespace {position: absolute; bottom: 0; left: 0;}
+#lwp-wrapper {padding: 0 85px; margin-top: -43px;}
+#lwp-wrapper .owl-height {height: 563px;}
+#lwp-wrapper .owl-item {transition: all 0.3s;}
+#lwp-wrapper .center {z-index: 1; transform: translateY(-7.1%);}
+a.lwp-link {position: relative; display: block; width: 430px; height: 520px; border-radius: 2px; text-decoration: none; margin-top: 43px;}
+a.lwp-link span:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #1b57ae; width: 200px; height: 200px; z-index: -1; opacity: 0.9; border-radius: 100%;}
+a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; line-height: 36px; letter-spacing: 0.05em; font-weight: 700; text-transform: uppercase; color: #fff;}
+
+
 /* -----------------------------------------
 
 #inner

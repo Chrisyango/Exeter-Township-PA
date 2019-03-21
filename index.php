@@ -139,18 +139,22 @@
 </header><!-- /.clearfix -->
 
 <main id="main">
-	<section id="lwp">
-		<div id="lwp-wrapper" class="owl-carousel">
-			<a href="./" class="lwp-link" style="background:url('./_assets_/images/live.jpg') center no-repeat;background-size:cover;">
-				<span>live</span>
-			</a><!-- /.lwp-link -->
-			<a href="./" class="lwp-link" style="background:url('./_assets_/images/work.jpg') center no-repeat;background-size:cover;">
-				<span>work</span>
-			</a><!-- /.lwp-link -->
-			<a href="./" class="lwp-link" style="background:url('./_assets_/images/play.jpg') center no-repeat;background-size:cover;">
-				<span>play</span>
-			</a><!-- /.lwp-link -->
-		</div><!-- /#lwp-wrapper.owl-carousel -->
+	<section id="lwp" style="background:url('./_assets_/images/lwp.jpg') center no-repeat;background-size:cover;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div id="lwp-wrapper" class="owl-carousel">
+				<a href="./" class="lwp-link" style="background:url('./_assets_/images/live.jpg') center no-repeat;background-size:cover;">
+					<span>live</span>
+				</a><!-- /.lwp-link -->
+				<a href="./" class="lwp-link" style="background:url('./_assets_/images/work.jpg') center no-repeat;background-size:cover;">
+					<span>work</span>
+				</a><!-- /.lwp-link -->
+				<a href="./" class="lwp-link" style="background:url('./_assets_/images/play.jpg') center no-repeat;background-size:cover;">
+					<span>play</span>
+				</a><!-- /.lwp-link -->
+			</div><!-- /#lwp-wrapper.owl-carousel -->
+		</div><!-- /.container -->
+		<img class="whitespace" src="./_assets_/images/lwp-whitespace.png" alt="Whitespace">
 	</section><!-- /#lwp -->
 
 	<section id="content">

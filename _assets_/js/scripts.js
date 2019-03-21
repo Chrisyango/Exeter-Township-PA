@@ -301,7 +301,33 @@
 
 	// Owl Slider
 	if(typeof $.fn.owlCarousel !== "undefined"){
-		$("#owl-slider").owlCarousel();
+		let lwpLinkCount = $('.lwp-link').length;
+		const lwpItem = function(num) {
+			return (lwpLinkCount >= num ? num : lwpLinkCount);
+		}
+		$("#lwp-wrapper").owlCarousel({
+			loop: lwpLinkCount > 1 ? true : false,
+			responsiveClass: true,
+			nav: true,
+			autoHeight: true,
+			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			margin: -45,
+			responsive: {
+				0: {
+					items: lwpItem(1),
+				},
+				767: {
+					items: lwpItem(2),
+				},
+				1200: {
+					items: lwpItem(3),
+					loop: false,
+					nav: false,
+					center: true,
+					startPosition: 1
+				}
+			}
+		});
 	}
 
 	// Preloader
