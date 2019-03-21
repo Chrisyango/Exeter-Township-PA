@@ -34,6 +34,18 @@
 		url(../fonts/freight/FreightBigProBold-Regular.woff2) format("woff2");
 	font-weight: 700;
 }
+@font-face{
+	font-family: 'Arno';
+	src:
+		url(../fonts/arno/ArnoPro-Italic.woff) format("woff"),
+		url(../fonts/arno/arno-pro-italic.woff2) format("woff2");
+}
+@font-face{
+	font-family: 'CenturyGothic';
+	src:
+		url(../fonts/centurygothic/CenturyGothic-Bold.woff) format("woff"),
+		url(../fonts/centurygothic/CenturyGothic-Bold.woff2) format("woff2");
+}
 body{background:#fff;font-size:14px;line-height:1.6;font-family:'FreightSans';color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
@@ -224,7 +236,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 body{overflow-x:hidden}
-.container {position: relative;}
+.container {width: 1400px;}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #skip {position: absolute; bottom: 149px; left: 50%; transform: translateX(-50%); z-index: 100; width: 36px; height: 36px;}
 
@@ -233,26 +245,44 @@ body{overflow-x:hidden}
 
 /*--------------- #slider ---------------*/
 #slider {position: relative; height: 900px;}
-#slider .container {position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 51; width: 1400px;}
+#slider .container {position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 51;}
 #logo {position: absolute; top: 53px; left: -12px; width: 235px; height: 247px;}
 
 
 /*--------------- #nav ---------------*/
+header {position: relative; z-index: 100; background-color: #fff; margin-top: -99px; text-align: right; height: 100px;}
+#nav-logo {float: left; height: 100px; overflow:hidden;}
+#nav-logo img {margin-top: -24px;}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
 
-#nav>li>ul {
-    -moz-column-count: 4;
-    -moz-column-gap: 40px;
-    -webkit-column-count: 4;
-    -webkit-column-gap: 40px;
-    column-count: 4;
-    column-gap: 40px;
-    padding:40px
-}
-#nav>li>ul li{display:inline-block;width:100%}
-#nav>li>ul li a{display:block}
+nav,
+#nav {display: inline-block; margin: 0; margin-right: 122px; padding: 0; font-size: 0;}
+#nav li {display: inline-block; margin: 0;}
+#nav li a {display: block; font-size: 18px; line-height: 36px; letter-spacing: 0.025em; text-transform: capitalize; text-decoration: none; color: #1b264f; margin-left: 57px; padding: 31px 0 33px;}
+#nav ul {display: none; margin: 0; padding: 0;}
+
+#right-nav {display: inline-block; position: absolute; top: 0; right: 0; font-size: 0;}
+.social-links {display: inline-block;}
+.social-links a {text-decoration: none; color: #1b57ae; font-size: 25px; margin-left: 38px; font-weight: 700;}
+
+#settings-drawer {display: inline-block;}
+#settings-toggle {width: 100px; height: 100px; line-height: 100px; text-align: center; font-size: 30px; background-color: #fff; color: #4bb843;}
+#settings {display: none; margin: 0; padding: 0; position: absolute; top: 100%; background-color: #fff; text-align: left;}
+#settings li {display: block; width: 150px;text-transform: capitalize; padding: 10px 15px; margin: 0; border-bottom: 1px solid rgba(0,0,0,.2); font-size: 16px; font-weight: 700;}
+.goog-te-gadget img{display:none}
+.goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
+.goog-te-menu-value span{display:none}
+.goog-te-menu-value span:first-of-type{font-family: 'FreightSans'; display:inline-block; margin-left: -4px; font-size: 16px; color: #444}
+
+#search-toggle {display: inline-block; width: 100px; height: 100px; line-height: 101px; text-align: center; font-size: 28px; background-color: #1b264e; color: #217485;}
+#search-toggle.fa-close {background-color: #315127; color: #bbb390;}
+#search {display: none; position: absolute; top: 100%; right: 0; width: 433px;}
+#search label {display: none;}
+#search input {font-family: 'Arno'; width: 100%; font-size: 22px; height: 100px; padding-left: 39px; padding-right: 115px;color: #121619; padding-top: 15px;}
+#search input::placeholder {font-family: 'Arno'; font-size: 22px; letter-spacing: 0.005em; color: #121619;}
+#search button {font-family: 'CenturyGothic'; position: absolute; top: 0; right: 0; font-size: 24px; letter-spacing: 0.005em; width: 100px; height: 100px; line-height: 100px; text-align: center; text-transform: uppercase; padding: 0; color: #0a5055!important; background-color: #fff;}
 
 
 /* -----------------------------------------

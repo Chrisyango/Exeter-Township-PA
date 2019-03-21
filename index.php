@@ -62,130 +62,80 @@
 
 		<nav>
 			<ul id="nav">
-				<li><a href="./">home</a></li>
+				<li><a href="./">about</a></li>
 				<li>
-					<a href="./">housing</a>
+					<a href="./">departments</a>
 					<ul>
+						<li><a href="./">this is a link</a></li>
 						<li>
-							<a href="./">section header</a>
+							<a href="./">this is a link</a>
 							<ul>
-								<li><a href="./">justo nibh ultricies sem elit</a></li>
-								<li><a href="./">ligula nibh tellus ornare</a></li>
-								<li><a href="./">ultricies sit pharetra amet</a></li>
-								<li><a href="./">cursus dapibus aenean</a></li>
-								<li><a href="./">inceptos nullam amet</a></li>
-								<li><a href="./">pellentesque justo nibh</a></li>
-								<li><a href="./">ultricies sem elit ligula nibh</a></li>
-								<li><a href="./">tellus ornare ultricies sit</a></li>
-								<li><a href="./">pharetra amet cursus</a></li>
+								<li><a href="./">this is a link</a></li>
+								<li><a href="./">this is a link</a></li>
+								<li><a href="./">this is a link</a></li>
+								<li><a href="./">this is a link</a></li>
 							</ul>
 						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">justo nibh ultricies sem elit</a></li>
-								<li><a href="./">ligula nibh tellus ornare</a></li>
-								<li><a href="./">ultricies sit phaaretra amet</a></li>
-								<li><a href="./">cursus dapibus aenean</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">inceptos nullam amet</a></li>
-								<li><a href="./">pellentesque justo nibh</a></li>
-								<li><a href="./">ultricies sem elit ligula nibh</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">justo nibh ultricies sem elit</a></li>
-								<li><a href="./">ligula nibh tellus ornare</a></li>
-							</ul>
-						</li>
-						<li><a href="./">section header</a></li>
-						<li><a href="./">section header</a></li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">ultricies sit pharetra amet</a></li>
-								<li><a href="./">cursus dapibus aenean</a></li>
-								<li><a href="./">inceptos nullam amet</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="./">section header</a>
-							<ul>
-								<li><a href="./">justo nibh ultricies sem elit</a></li>
-								<li><a href="./">ligula nibh tellus ornare</a></li>
-								<li><a href="./">ultricies sit pharetra amet</a></li>
-								<li><a href="./">cursus dapibus aenean</a></li>
-								<li><a href="./">inceptos nullam amet</a></li>
-								<li><a href="./">pellentesque justo nibh</a></li>
-								<li><a href="./">ultricies sem elit ligula nibh</a></li>
-								<li><a href="./">tellus ornare ultricies sit</a></li>
-								<li><a href="./">pharetra amet cursus</a></li>
-							</ul>
-						</li>
+						<li><a href="./">this is a link</a></li>
+						<li><a href="./">this is a link</a></li>
 					</ul>
 				</li>
-				<li><a href="./">redevelopment</a></li>
+				<li><a href="./">services</a></li>
+				<li><a href="./">business</a></li>
 				<li><a href="./">residents</a></li>
 				<li><a href="./">how do i...</a></li>
 			</ul> <!-- /#nav -->
 		</nav>
+	</div><!-- /.container -->
 
-		<div id="right-nav">
-			<div class="social-links hidden-sm hidden-xs">
-				<a href="./" class="fa fa-facebook"></a>
-				<a href="./" class="fa fa-at"></a>
-			</div><!-- /.social-links -->
+	<div id="right-nav">
+		<div class="social-links hidden-sm hidden-xs">
+			<a href="./" class="fa fa-facebook"></a>
+			<a href="./" class="fa fa-at"></a>
+		</div><!-- /.social-links -->
 
-			<div id="settings-drawer">
-				<ul id="settings">
-					<li id="resize-header">text size</li>
-					<li id="font-decrease" class="fa fa-minus"></li>
-					<li id="font-increase" class="fa fa-plus"></li>
-					<li id="google-translate">
-						<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-						<div id="google_translate_element"></div>
-						<script type="text/javascript">
-							function googleTranslateElementInit() {
-								new google.translate.TranslateElement({  
-									pageLanguage: 'en', 
-									layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-								}, 'google_translate_element');
-							}
-						</script>
-						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-						<script>
-							$(document).ready(function(){
-								$('#google_translate_element').bind('DOMNodeInserted', function(event) {
-									$('.goog-te-menu-value span:first').html('ENG <i class="fa fa-chevron-down"></i>');
-									$('.goog-te-menu-frame.skiptranslate').load(function(){
-										setTimeout(function(){
-											$('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('ENG <i class="fa fa-chevron-down"></i>');    
-										}, 100);
-									});
+		<div id="settings-drawer">
+			<div tabindex="0" id="settings-toggle" class="fa fa-bars"></div><!-- /#search-toggle -->
+			<ul id="settings">
+				<li id="font-increase">font increase</li>
+				<li id="font-decrease">font decrease</li>
+				<li id="google-translate">
+					<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+					<div id="google_translate_element"></div>
+					<script type="text/javascript">
+						function googleTranslateElementInit() {
+							new google.translate.TranslateElement({  
+								pageLanguage: 'en', 
+								layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+							}, 'google_translate_element');
+						}
+					</script>
+					<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					<script>
+						$(document).ready(function(){
+							$('#google_translate_element').bind('DOMNodeInserted', function(event) {
+								$('.goog-te-menu-value span:first').html('Translate <i class="fa fa-chevron-down"></i>');
+								$('.goog-te-menu-frame.skiptranslate').load(function(){
+									setTimeout(function(){
+										$('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('Translate <i class="fa fa-chevron-down"></i>');    
+									}, 100);
 								});
 							});
-						</script>
-					</li><!--/#google-translate.control.hidden-sm.hidden-xs-->
-				</ul><!-- /#settings -->
-			</div><!-- /#settings-drawer -->
+						});
+					</script>
+				</li><!--/#google-translate.control.hidden-sm.hidden-xs-->
+			</ul><!-- /#settings -->
+		</div><!-- /#settings-drawer -->
 
-			<div tabindex="0" id="search-toggle" class="fa fa-search"></div><!-- /#search-toggle -->
-		</div><!-- /#right-nav -->
-
+		<div tabindex="0" id="search-toggle" class="fa fa-search"></div><!-- /#search-toggle -->
 		<div id="search">
 			<form class="search-form" method="get" action="search.php">
 				<label class="fa fa-search" for="search-input"></label>
-				<input name="q" class="form-control search-input" placeholder="Enter keywords..." type="search" id="search-input">
-				<button><i class="fa fa-search"></i></button>
+				<input name="q" class="form-control search-input" placeholder="Enter keyword to search..." type="search" id="search-input">
+				<button>go</button>
 			</form><!-- /.search-form -->
 		</div><!-- /#search -->
-	</div><!-- /.container -->
+	</div><!-- /#right-nav -->
 </header><!-- /.clearfix -->
 
 <main id="main">

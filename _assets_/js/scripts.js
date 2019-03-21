@@ -54,15 +54,26 @@
 	}
 
 	// Search Toggle
-	$('#search-toggle').on('click',function(e){
+	$('#search-toggle').on('click keypress',function(e){
+		$('#search').stop().slideToggle(200);
+		$(this).toggleClass('fa-search fa-close');
+	});
+
+	$('#search-toggle-mobile').on('click keypress',function(e){
 		$('#search').stop().slideToggle(200);
 		$(this).toggleClass('fa-search fa-close');
 	});
 
 	// Navigation Toggle
-	$("#nav-toggle").on("click", function(){
+	$("#nav-toggle").on("click keypress", function(){
 		$("#nav").stop().slideToggle();
 		$(this).toggleClass("active");
+	});
+
+	// Settings Toggle
+	$("#settings-toggle").on("click keypress", function(){
+		$("#settings").stop().slideToggle();
+		$(this).toggleClass("fa-bars fa-close");
 	});
 	
 	// Keyboard Navigation: Nav, flyout
@@ -85,7 +96,7 @@
 	});
 
 	// Menu Arrows
-	$("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
+	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
@@ -304,6 +315,28 @@
 	});
 
 	$window.ready(function(){
+
+		// Font Adjuster
+		function textResizer() {
+			var $base, $baseSize, $dec, $inc;
+			if ($('#settings').length) {
+				$inc = $('#font-increase');
+				$dec = $('#font-decrease');
+				$inc.on('click', function(e) {
+					return $('#post,body, #nav a,#nav span, body section').css({
+						'font-size': '+=3',
+						'line-height' : '+= 3'
+					});
+				});
+				$dec.on('click', function(e) {
+					return $('#post,body, #nav a,#nav span, body section').css({
+						'font-size': '-=3',
+						'line-height' : '+= 3'
+					});
+				});
+			}
+		};
+		textResizer();
 
 		// Social Feed
 		if ( typeof $.fn.socialfeed !== "undefined"){
