@@ -216,44 +216,48 @@
 		</section><!-- /#events-news -->
 
 		<section id="departments">
-			<div id="departments-links" class="owl-carousel">
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department1.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department2.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department3.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department4.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department5.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department6.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department7.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department8.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-				<a href="./" class="departments-link">
-					<div style="background:url('./_assets_/images/department9.png') center no-repeat;background-size:cover;"></div>
-					<span>streets + highways</span>
-				</a><!-- /departments-link -->
-			</div><!-- /#departments-links.owl-carousel -->
+			<img class="whitespace" src="./_assets_/images/departments-whitespace.png" alt="Whitespace">
+			<div class="container">
+				<h2>find a department</h2>
+				<div id="departments-links" class="owl-carousel">
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department1.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department2.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department3.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department4.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department5.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department6.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department7.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department8.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+					<a href="./" class="departments-link">
+						<div class="departments-link-img" style="background:url('./_assets_/images/department9.png') center no-repeat;background-size:cover;"></div>
+						<span>streets + highways</span>
+					</a><!-- /departments-link -->
+				</div><!-- /#departments-links.owl-carousel -->
+			</div><!-- /.container -->
 		</section><!-- /#departments -->
 
 		<section id="community">

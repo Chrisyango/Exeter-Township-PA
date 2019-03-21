@@ -346,6 +346,38 @@
 				}
 			}
 		});
+
+		let departmentsLinkCount = $('.departments-link').length;
+		const departmentsItem = function(num) {
+			return (departmentsLinkCount >= num ? num : departmentsLinkCount);
+		}
+		$("#departments-links").owlCarousel({
+			loop: departmentsLinkCount > 1 ? true : false,
+			responsiveClass: true,
+			nav: true,
+			autoHeight: true,
+			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			margin: 0,
+			responsive: {
+				0: {
+					items: departmentsItem(1),
+				},
+				500: {
+					items: departmentsItem(3),
+				},
+				800: {
+					items: departmentsItem(5),
+				},
+				1100: {
+					items: departmentsItem(7),
+				},
+				1400: {
+					items: departmentsItem(9),
+					loop: false,
+					nav: false
+				}
+			}
+		});
 	}
 
 	// Preloader

@@ -214,29 +214,11 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 /* -----------------------------------------
 
-#loader
-
------------------------------------------*/
-#loader-wrapper{position:fixed;top:0;right:0;bottom:0;left:0;background:#233447;z-index:99999;display:none!important}
-#loader-wrapper img{width:60px;position:absolute;top:50%;left:50%;margin:-30px 0 0 -30px;animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation;-webkit-animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation}
-@keyframes spinning_animation {
-	0%{transform:scale(1) rotate(0deg);-o-transform:scale(1) rotate(0deg)}
-	50%{transform:scale(0.8) rotate(360deg);-o-transform:scale(0.8) rotate(360deg)}
-	100%{transform:scale(1) rotate(720deg);-o-transform:scale(1) rotate(720deg)}
-}
-@-webkit-keyframes spinning_animation {
-	0%{-webkit-transform:scale(1) rotate(0deg)}
-	50%{-webkit-transform:scale(0.8) rotate(360deg)}
-	100%{-webkit-transform:scale(1) rotate(720deg)}
-}
-
-/* -----------------------------------------
-
 #main
 
 -----------------------------------------*/
 body{overflow-x:hidden}
-.container {width: 1400px;}
+.container {width: 1400px; max-width: 100%;}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #skip {position: absolute; bottom: 149px; left: 50%; transform: translateX(-50%); z-index: 100; width: 36px; height: 36px;}
 
@@ -321,6 +303,22 @@ a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-
 .news-link-content p {font-size: 16px; line-height: 26px; letter-spacing: 0.005em; color: #000000; margin: 17px 0 0;}
 .news-link-content a:first-of-type {position: absolute; top: 21px; right: 30px; width: 15px; height: 15px;}
 .news-link-content a.fa-facebook {position: absolute; top: 51px; right: 29px; text-decoration: none; color: #1b57ae; font-size: 20px;}
+
+
+/*--------------- #departments ---------------*/
+#departments {position: relative; background-color: #1b264f; height: 324px; padding-top: 37px;}
+#departments .container {width: 1380px;}
+#departments h2 {font-size: 30px; line-height: 48px; letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; color: #fff; text-align: center; margin: 28px 0 22px;}
+#departments .whitespace {position: absolute; bottom: -53px; left: 0; width: 100%;}
+#departments-links .owl-height {height:150px!important;}
+a.departments-link {text-decoration: none; display: inline-block; margin-top: 30px;}
+a.departments-link:hover span {opacity: 1}
+
+a.departments-link span {display: inline-block; margin-top: 25px; font-size: 18px; line-height: 45px; letter-spacing: 0.005em; color: #fff; text-transform: capitalize; width: 150px; opacity: 0; text-align: center;}
+.departments-link-img {position: relative; width: 48px; height: 48px; margin: 0 auto;}
+.departments-link-img:before {content: ''; position: absolute; top: -15px; left: -16px; width: 80px; height: 80px; border: 3px solid #1b57ae; border-radius: 50%;}
+a.departments-link:hover .departments-link-img:before {border: 3px solid #4bb843;}
+a.departments-link:hover .departments-link-img:after {content: ''; position: absolute; top: -20px; left: -21px; width: 90px; height: 90px; border: 3px solid #157f1e; border-radius: 50%;}
 
 
 /* -----------------------------------------
