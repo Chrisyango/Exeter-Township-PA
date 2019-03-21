@@ -261,10 +261,11 @@
 		</section><!-- /#departments -->
 
 		<section id="community">
+			<div id="community-bg" style="background:url('./_assets_/images/community.png') center no-repeat;background-size:cover;"></div>
 			<div class="container">
 				<div id="community-info">
 					<h2><span>get social</span>Connect with the Community</h2>
-					<ul id="tabs">
+					<ul id="tabs1">
 						<li><a href="./">the township</a></li>
 						<li><a href="./">police department</a></li>
 						<li><a href="./">parks + recreation</a></li>
@@ -274,7 +275,7 @@
 				<div id="social-wrapper">
 					<div id="tabs-content">
 						<div class="active">
-							<div id="social-feed" class="row"></div>
+							<div id="social-feed"></div>
 						</div><!-- /.active -->
 						<div>
 							<div id="twitter-feed"></div>
