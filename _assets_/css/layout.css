@@ -128,21 +128,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'FreightSans';text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#1b264f;color:#28bdb9!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:700!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'FreightSans';text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#1b264f}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#1b264f}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -286,9 +286,9 @@ nav,
 
 
 /*--------------- #lwp ---------------*/
-#lwp {position: relative; height: 830px; padding-top: 160px;}
+#lwp {position: relative; height: 830px; padding-top: 160px;z-index: 1;}
 #lwp .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.75;}
-#lwp .whitespace {position: absolute; bottom: 0; left: 0;}
+#lwp .whitespace {position: absolute; bottom: 0; left: 0; width: 100%;}
 #lwp-wrapper {padding: 0 85px; margin-top: -43px;}
 #lwp-wrapper .owl-height {height: 563px;}
 #lwp-wrapper .owl-item {transition: all 0.3s;}
@@ -296,6 +296,31 @@ nav,
 a.lwp-link {position: relative; display: block; width: 430px; height: 520px; border-radius: 2px; text-decoration: none; margin-top: 43px;}
 a.lwp-link span:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #1b57ae; width: 200px; height: 200px; z-index: -1; opacity: 0.9; border-radius: 100%;}
 a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; line-height: 36px; letter-spacing: 0.05em; font-weight: 700; text-transform: uppercase; color: #fff;}
+
+
+/*--------------- #events-news ---------------*/
+#events-news {position: relative; height: 1121px; margin-top: -30px; padding-top: 30px;}
+#events-news .overlay {position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: #fff; opacity: 0.9;}
+#events-news a.btn {width: 153px; height: 60px; line-height: 60px; font-size: 14px; letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; background-color: #1b264f; padding: 0;}
+
+#events {padding: 0 72px;}
+#events h2 {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; text-transform: capitalize; color: #1b264f; margin: 81px 8px 44px;}
+#events a.btn {margin: 46px 0 0 13px;}
+
+#news {padding: 0 84px 0 99px;}
+#news h2 {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; text-transform: capitalize; color: #1b264f; margin: 81px 0 55px -7px;}
+#news a.btn {margin: 31px 0 0 149px;}
+#news-links .owl-prev,
+#news-links .owl-next {position: absolute; bottom: -91px; left: -1px; background-color: #1b57ae; color: #f3eff5; width: 60px; height: 60px; line-height: 60px; text-align: center; font-size: 20px;}
+#news-links .owl-next {left: 69px;}
+.news-link {display: block; position: relative; height: 316px; margin-bottom: 34px;}
+.news-link:hover:after {content: ''; position: absolute; bottom: -4px; height: 4px; width: 100%; background-color: #157f1e;}
+.news-link-content {position: absolute; bottom: 0; left: 0; background-color: #fff; width: 100%; padding: 15px 28px 28px;}
+.news-link-content span {font-family: 'FreightSansBook'; font-size: 20px; text-transform: capitalize; color: #454955;}
+.news-link-content h3 {font-size: 24px; text-transform: capitalize; color: #184889; margin: 0;}
+.news-link-content p {font-size: 16px; line-height: 26px; letter-spacing: 0.005em; color: #000000; margin: 17px 0 0;}
+.news-link-content a:first-of-type {position: absolute; top: 21px; right: 30px; width: 15px; height: 15px;}
+.news-link-content a.fa-facebook {position: absolute; top: 51px; right: 29px; text-decoration: none; color: #1b57ae; font-size: 20px;}
 
 
 /* -----------------------------------------
@@ -342,7 +367,7 @@ a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-
 .btn-google:hover{border-color:#D34836}
 .btn-reddit:hover{border-color:#ff5700}
 .btn-lg{font-size:16px;padding:14px 30px;border:0;border-radius:3px}
-.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#5f695f!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#1b264f!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
 .floating-share-btn span{display:block}
 
 /* -----------------------------------------

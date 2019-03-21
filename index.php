@@ -159,31 +159,30 @@
 
 	<section id="content">
 		<section id="events-news" style="background:url('./_assets_/images/events-news.jpg') center no-repeat;background-size:cover;">
+			<div class="overlay"></div>
 			<div class="container">
 				<section id="events" class="col-md-6">
 					<h2>upcoming events</h2>
 					<img src="./_assets_/images/events.png" alt="Events">
-					<a href="./" class="btn">see all events</a>
+					<a href="./" class="btn">calendar</a>
 				</section><!-- /#events -->
 
 				<section id="news" class="col-md-6">
 					<h2>news & announcements</h2>
 					<div id="news-links" class="owl-carousel">
 						<div class="news-link-wrapper">
-							<div class="news-link">
-								<div class="news-link-img" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;"></div><!-- /.news-link-img -->
+							<div class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
-									<span>jan. 01, 2019</span>
+									<span>january 01, 2019</span>
 									<h3>2019 prelimary budget posted</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
 									<a href="./" class="fa fa-facebook"></a>
 								</div><!-- /.news-link-content -->
 							</div><!-- /.news-link -->
-							<div class="news-link">
-								<div class="news-link-img" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;"></div><!-- /.news-link-img -->
+							<div class="news-link" style="background:url('./_assets_/images/news2.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
-									<span>jan. 01, 2019</span>
+									<span>january 09, 2019</span>
 									<h3>protect your home - 2019 resident safety</h3>
 									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
 									<a href="./" class="fa fa-facebook"></a>
@@ -191,22 +190,20 @@
 							</div><!-- /.news-link -->
 						</div><!-- /.news-link-wrapper -->
 						<div class="news-link-wrapper">
-							<div class="news-link">
-								<div class="news-link-img" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;"></div><!-- /.news-link-img -->
+							<div class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
-									<span>jan. 01, 2019</span>
-									<h3>test test test test test test</h3>
+									<span>january 01, 2019</span>
+									<h3>2019 prelimary budget posted</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
 									<a href="./" class="fa fa-facebook"></a>
 								</div><!-- /.news-link-content -->
 							</div><!-- /.news-link -->
-							<div class="news-link">
-								<div class="news-link-img" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;"></div><!-- /.news-link-img -->
+							<div class="news-link" style="background:url('./_assets_/images/news2.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
-									<span>jan. 01, 2019</span>
-									<h3>testing testing testing</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<span>january 09, 2019</span>
+									<h3>protect your home - 2019 resident safety</h3>
+									<p>test test test test</p>
 									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
 									<a href="./" class="fa fa-facebook"></a>
 								</div><!-- /.news-link-content -->
