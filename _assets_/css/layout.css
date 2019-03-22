@@ -341,12 +341,31 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #community-info ul {margin: 0; padding: 0;}
 #community-info ul li {display: inline-block; margin: 0;}
 #community-info ul li a {position: relative; font-size: 20px; line-height: 45px; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: #fff; margin: 0 30px;}
+#community-info ul li.active a {color: #4bb843; text-decoration: underline;}
 #community-info ul li a:hover {text-decoration: underline; color:#4bb843;}
 #community-info ul li:not(:last-of-type) a:after {content: '\2022'; position: absolute; right: -32px; bottom: -8px; font-size: 10px;}
 
-#social-wrapper {padding: 0 64px;}
-.social-feed-element {display: inline-block; font-size: 0; width: 29%; margin-right: 77px;}
+#social-wrapper {padding: 0 64px; margin-top: 33px;}
+.social-feed-element {display: inline-block; font-size: 0; width: 29.06%; margin-right: 77px;}
 .social-feed-element:last-of-type {margin-right: 0;}
+.media-body {background-color: #fff;}
+.author-date {padding: 16px 10px;}
+.media-object {margin-right: 8px;}
+.author-title {display: block; font-size: 18px; letter-spacing: 0.01em; color: #1b264f;}
+.time-posted {font-size: 16px; letter-spacing: 0.01em; color: #454955;}
+.text-wrapper {padding: 0px 30px;}
+.social-feed-text {font-size: 16px; line-height: 26px; letter-spacing: 0.005em; color: #454955; margin-bottom: 0px;}
+.social-img-container {height: 188px; margin-top: 5px; overflow: hidden;}
+.social-feed-links {padding: 12px 30px;}
+.read-button {font-family: 'FreightSansProBold'; font-size: 16px; line-height: 36px; letter-spacing: 0.01em; text-decoration: none; text-transform: capitalize; color: #454955;}
+.social-feed-links i {font-size: 18px; margin-top: 10px; color: #15468c; float: right;}
+
+#filter {text-align: center; font-size: 0; padding: 33px 0 37px;}
+#filter span {font-size: 20px; line-height: 45px; letter-spacing: 0.05em; color: #fff; opacity: 0.5; text-transform: uppercase; margin-right: 27px;}
+#filter ul {display: inline-block; margin: 0; padding: 0; position: relative; top: 3px; left: -9px;}
+#filter li {display: inline-block; margin: 0;}
+#filter li a {text-decoration: none; color: #1b264f; font-size: 28px; margin: 0 13px; opacity: 0.5}
+#filter li.active a {opacity: 1;}
 
 /* -----------------------------------------
 

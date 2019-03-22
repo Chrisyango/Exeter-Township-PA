@@ -266,7 +266,7 @@
 				<div id="community-info">
 					<h2><span>get social</span>Connect with the Community</h2>
 					<ul id="tabs1">
-						<li><a href="./">the township</a></li>
+						<li class="active"><a href="./">the township</a></li>
 						<li><a href="./">police department</a></li>
 						<li><a href="./">parks + recreation</a></li>
 					</ul><!-- /#tabs -->
