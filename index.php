@@ -295,9 +295,11 @@
 			<div class="container">
 				<form>
 					<label for="signup-input">Sign-up for Local Updates:</label>
-					<input name="q" class="form-control" placeholder="Your Email Address for our e-Newsletter" id="signup-input">
-					<button class="btn">submit</button>
-					<button class="btn">?</button>
+					<div>
+						<input name="q" class="form-control" placeholder="Your Email Address for our e-Newsletter" id="signup-input">
+						<button class="btn">submit</button>
+						<button class="btn">?</button>
+					</div>
 				</form>
 			</div><!-- /.container -->
 		</section><!-- /#sign-up -->
