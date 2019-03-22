@@ -333,12 +333,12 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #community-info ul {margin: 0; padding: 0;}
 #community-info ul li {display: inline-block; margin: 0;}
 #community-info ul li a {position: relative; font-size: 20px; line-height: 45px; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: #fff; margin: 0 30px;}
-#community-info ul li.active a {color: #4bb843; text-decoration: underline;}
+#community-info ul li.current a {color: #4bb843; text-decoration: underline;}
 #community-info ul li a:hover {text-decoration: underline; color:#4bb843;}
 #community-info ul li:not(:last-of-type) a:after {content: '\2022'; position: absolute; right: -32px; bottom: -8px; font-size: 10px;}
 
 #social-wrapper {padding: 0 64px; margin-top: 33px;}
-.social-feed-element {display: inline-block; font-size: 0; width: 29.06%; margin-right: 77px;}
+.social-feed-element {display: inline-block; font-size: 0; width: 29.06%; margin-right: 5.661764705882353%;}
 .social-feed-element:last-of-type {margin-right: 0;}
 .media-body {background-color: #fff;}
 .author-date {padding: 16px 10px;}
@@ -357,7 +357,7 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #filter ul {display: inline-block; margin: 0; padding: 0; position: relative; top: 3px; left: -9px;}
 #filter li {display: inline-block; margin: 0;}
 #filter li a {text-decoration: none; color: #1b264f; font-size: 28px; margin: 0 13px; opacity: 0.5}
-#filter li.active a {opacity: 1;}
+#filter li.current a {opacity: 1;}
 
 
 /*--------------- #sign-up ---------------*/
@@ -526,6 +526,11 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	/*--------------- #lwp ---------------*/
 	a.lwp-link {width: auto;}
 
+
+	/*--------------- #community ---------------*/
+	#community:before,
+	#community:after {width: 300px;}
+
 }
 
 @media only screen and (max-width:1280px) {
@@ -533,6 +538,17 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	/*--------------- #events-news ---------------*/
 	#events,
 	#news {padding: 0 45px;}
+
+
+	/*--------------- #community ---------------*/
+	#community:before,
+	#community:after {width: 170px; top: 195px;}
+	#community-info h2 {margin-top: 50px;}
+	#community-info h2 span {font-size: 80px;}
+	#community-info ul li a {font-size: 18px;}
+	#social-wrapper {padding: 0;}
+	#filter span {font-size: 18px;}
+	#filter li a {font-size: 22px;}
 
 }
 
@@ -607,6 +623,16 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#events a.btn {margin-left: 0;}
 	#news-links .owl-prev {left: 0;}
 
+
+	/*--------------- #community ---------------*/
+	#community:before,
+	#community:after {width: 100px; top: 195px;}
+	#community-info h2 {font-size: 44px;}
+	#community-info h2 span {font-size: 66px;}
+	.social-feed-element:last-of-type {margin-right: auto;}
+	.social-feed-element {display: block; width: 100%; margin: 30px auto;}
+	
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -631,6 +657,26 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#news a.btn {margin-left: 120px;}
 	
 
+	/*--------------- #community ---------------*/
+	#community:before,
+	#community:after {display: none;}
+	#community-info h2 {font-size: 40px;}
+	#community-info h2 span {font-size: 60px; width: 100%; line-height: 45px;}
+	#community-info ul li a {font-size: 16px; margin: 0 10px;}
+	#community-info ul li:not(:last-of-type) a:after {right: -15px; bottom: -10px;}
+	#filter {padding-top: 0;}
+	#filter span {font-size: 16px;}
+	#filter li a {font-size: 20px;}
+	.social-feed-element:last-of-type {margin-right: auto;}
+	.social-feed-element {display: block; width: 100%; margin: 30px auto;}
+
+}
+
+@media only screen and (max-width:504px) {
+
+	/*--------------- #community ---------------*/
+	#community-info h2 span {line-height: 90px;}
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -651,6 +697,11 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	/*--------------- #events-news ---------------*/
 	#events h2,
 	#news h2 {font-size: 36px;}
+
+
+	/*--------------- #community ---------------*/
+	#community-info h2 {font-size: 36px;}
+	#community-info h2 span {font-size: 50px;}
 
 }
 
