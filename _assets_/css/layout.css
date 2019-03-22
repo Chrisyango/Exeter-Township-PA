@@ -377,12 +377,13 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 #contact-info>span {position: relative; margin-right: 30px;}
 #contact-info>span:not(:last-of-type):after {content: ''; position: absolute; top: 5px; bottom: 1px; right: -18px; width: 2px; background-color: #000; opacity: 0.5;}
 #contact-info span span,
-#contact-info span:last-of-type {font-family: 'FreightSansBook';}
+#contact-info span:last-of-type {font-family: 'FreightSansBook'; margin-right: 0;}
 
 #revize {float: right; font-family: 'FreightSansBook'; font-size: 18px; line-height: 36px; letter-spacing: 0.01em; margin-right: 4px;}
 #revize ul {display: inline-block; margin: 0; padding: 0; position: relative; top: 3px;}
 #revize li {display: inline-block;}
 #revize li a {text-decoration: none; color: #4979be; font-size: 22px; margin-left: 24px;}
+#revize li:first-of-type a {margin-left: 0;}
 #revize>a {color: #157f1e; text-decoration: none; text-transform: capitalize; margin-left: 70px;}
 #revize span {position: relative; margin-left: 31px;}
 #revize span:after {content: ''; position: absolute; top: 4px; bottom: 2px; left: -18px; width: 2px; background-color: #000; opacity: 0.5;}
@@ -563,6 +564,14 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#sign-up input::placeholder {font-size: 18px;}
 	#sign-up button {width: 80px;}
 
+
+	/*--------------- #footer ---------------*/
+	#contact-info {font-size: 16px;}
+
+	#revize {font-size: 16px;}
+	#revize>a {margin-left: 30px;}
+	#revize span a {font-size: 18px;}
+
 }
 
 @media only screen and (max-width:991px) {
@@ -656,6 +665,14 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#sign-up button {width: 80px; height: 45px; line-height: 45px;}
 	#sign-up button:last-of-type {width: 45px;}
 
+
+	/*--------------- #footer ---------------*/
+	#contact-info,
+	#revize {float: none;}
+
+	#revize>a {margin: 0;}
+
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -695,6 +712,12 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 	/*--------------- #sign-up ---------------*/
 	#sign-up label {font-size: 40px;}
+
+
+	/*--------------- #footer ---------------*/
+	#contact-info,
+	#revize {font-size: 14px;}
+	#revize span a {font-size: 16px;}
 
 
 }
@@ -737,6 +760,11 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#sign-up input::placeholder {font-size: 16px;}
 	#sign-up button {font-size: 13px;}
 	#sign-up button:last-of-type {font-size: 22px;}
+
+
+	/*--------------- #footer ---------------*/
+	#contact-info>span {display: block; line-height: 20px;}
+	#contact-info>span:after {display: none;}
 
 
 }

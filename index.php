@@ -315,7 +315,7 @@
 		</section><!-- /#contact-info -->
 
 		<section id="revize">
-			<ul>
+			<ul class="hidden-sm hidden-xs">
 				<li><a href="./" class="fa fa-facebook"></a></li>
 				<li><a href="./" class="fa fa-exclamation-triangle"></a></li>
 			</ul>
