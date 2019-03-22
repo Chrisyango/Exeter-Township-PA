@@ -207,40 +207,6 @@
 	});
 	// end calendar resize handler
 
-	// revizeWeather
-	if( typeof $.fn.revizeWeather !== "undefined" ){
-		$.fn.revizeWeather({
-			zip: '48326',
-			city_name: '',
-			unit: 'f',
-			success: function(weather) {
-				var date = new Date();
-				date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-				var html = '<span>'+date+'</span> <span class="forecast">'+weather.temp+'&deg; '+weather.forecast+'</span>';
-				html += '<i class="'+weather.icon+'"></i>';
-
-				$("#weather").html(html);
-			},
-			error: function(error) {
-				// better to just hide the secion if there is an error
-				$('.weather').hide();
-				console.log(error);
-			}
-		});
-	}
-
-	// Mega Footer Toggle
-	$('.header-toggle').on('click keydown', function(e) {
-		if (e.keyCode === 13 || e.type === 'click') {
-			var inner = $(this).next('.inner-toggle');
-			if (inner.is(':hidden')) {
-				inner.slideDown('200');
-			} else {
-				inner.slideUp('200');
-			}
-		}
-	});
-
 	// Tabs
 	$('#tabs li a').on('click keypress', function(e) {
 		$('#tabs li, #tabs-content .current').removeClass('current').removeClass('fadeInLeft');
@@ -281,14 +247,6 @@
 		});
 		userFeed.run();
 	}
-
-	// Sticky
-	if(typeof $.fn.sticky !== "undefined"){
-		$("#sticky").sticky({
-			topSpacing:0
-		});
-	}
-
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
@@ -381,17 +339,16 @@
 		});
 	}
 
-	// Preloader
-	$window.load(function() {
-
-		setTimeout(function(){
-			$body.addClass('loaded');
-			 $('#loader-wrapper').fadeOut();
-		}, 600);
-
-	});
-
 	$window.ready(function(){
+
+		//Fixed Nav
+		$(window).bind('scroll', function () {
+			if ($(window).scrollTop() > $('#slider').height() - 99) {
+					$('header').addClass('fixed');
+			} else {
+					$('header').removeClass('fixed');
+			}
+		});
 
 		// Font Adjuster
 		function textResizer() {
@@ -428,19 +385,7 @@
 					length: 45,
 					show_media: true,
 					callback:function(){
-						$('.text-wrapper').matchHeight();
 					}
-			});
-		}
-
-		// matchHeight
-		if(typeof $.fn.matchHeight !== "undefined"){
-			$('.equal').matchHeight({
-				//defaults
-				byRow: true,
-				property: 'height', // height or min-height
-				target: null,
-				remove: false
 			});
 		}
 
@@ -539,21 +484,6 @@
 
 		};
 		$('.v-align').flexVerticalCenter();
-
-
-		// Remove matchHeight on document center pages
-		if($('#RZdocument_center').length){
-			$('.aside,.entry').matchHeight({remove:true});
-
-			if(window.matchMedia("(min-width: 992px)").matches){
-				setInterval(function(){
-					if($('.post').outerHeight() + 300 > $('.entry').outerHeight()){
-						$('.aside').css('height',$('.entry').outerHeight() + 'px');
-					}
-				}, 200);
-			}
-		}
-
 
 	}); // Ready
 

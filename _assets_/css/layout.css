@@ -481,6 +481,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#nav .focused .toggle,#nav .focused .toggle2,#flyout .focused .toggle{display:inline-block;margin-left:8px}
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
+	.fixed {position: fixed; top: 0; width: 100%; margin-top: 0;}
 
 
 	/*--------------- #nav ---------------*/
