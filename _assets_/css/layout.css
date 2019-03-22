@@ -239,7 +239,7 @@ body{overflow-x:hidden}
 
 
 /*--------------- #nav ---------------*/
-header {position: relative; z-index: 100; background-color: #fff; margin-top: -99px; text-align: right; height: 100px; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
+header {position: relative; z-index: 100; background-color: #fff; margin-top: -99px; text-align: right; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 #nav-logo {float: left; height: 100px; overflow:hidden;}
 #nav-logo img {margin-top: -24px;}
 #nav-toggle,
@@ -250,23 +250,9 @@ nav,
 #nav {display: inline-block; margin: 0; margin-right: 122px; padding: 0; font-size: 0;}
 #nav li {display: inline-block; margin: 0;}
 #nav li a {display: block; font-size: 18px; line-height: 36px; letter-spacing: 0.025em; text-transform: capitalize; text-decoration: none; color: #1b264f; margin-left: 57px; padding: 31px 0 33px;}
+#nav>li:first-of-type>a {margin: 0;}
 #nav ul {display: none; margin: 0; padding: 0;}
 
-#right-nav {display: inline-block; position: absolute; top: 0; right: 0; font-size: 0;}
-.social-links {display: inline-block;}
-.social-links a {font-family: 'FreightSansBold'; text-decoration: none; color: #1b57ae; font-size: 25px; margin-left: 38px;}
-
-#settings-drawer {display: inline-block;}
-#settings-toggle {width: 100px; height: 100px; line-height: 100px; text-align: center; font-size: 30px; background-color: #fff; color: #4bb843;}
-#settings {display: none; margin: 0; padding: 0; position: absolute; top: 100%; background-color: #fff; text-align: left;}
-#settings li {font-family: 'FreightSansBold'; display: block; width: 150px;text-transform: capitalize; padding: 10px 15px; margin: 0; border-bottom: 1px solid rgba(0,0,0,.2); font-size: 16px;}
-.goog-te-gadget img{display:none}
-.goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
-.goog-te-menu-value span{display:none}
-.goog-te-menu-value span:first-of-type{font-family: 'FreightSans'; display:inline-block; margin-left: -4px; font-size: 16px; color: #444}
-
-#search-toggle {display: inline-block; width: 100px; height: 100px; line-height: 101px; text-align: center; font-size: 28px; background-color: #1b264e; color: #217485;}
-#search-toggle.fa-close {background-color: #315127; color: #bbb390;}
 #search {display: none; position: absolute; top: 100%; right: 0; width: 433px;}
 #search label {display: none;}
 #search input {font-family: 'Arno'; width: 100%; font-size: 22px; height: 100px; padding-left: 39px; padding-right: 115px;color: #121619; padding-top: 15px;}
@@ -488,6 +474,42 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
 
+
+	/*--------------- #nav ---------------*/
+	#right-nav {display: inline-block; position: absolute; top: 0; right: 0; font-size: 0;}
+	.social-links {display: inline-block;}
+	.social-links a {text-decoration: none; color: #1b57ae; font-size: 25px; margin-left: 38px;}
+
+	#settings-drawer {display: inline-block;}
+	#settings-toggle {width: 100px; height: 100px; line-height: 100px; text-align: center; font-size: 30px; background-color: #fff; color: #4bb843;}
+	#settings {display: none; margin: 0; padding: 0; position: absolute; top: 100%; background-color: #fff; text-align: left;}
+	#settings li {font-family: 'FreightSansBold'; display: block; width: 150px;text-transform: capitalize; padding: 10px 15px; margin: 0; border-bottom: 1px solid rgba(0,0,0,.2); font-size: 16px;}
+	.goog-te-gadget img{display:none}
+	.goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
+	.goog-te-menu-value span{display:none}
+	.goog-te-menu-value span:first-of-type{font-family: 'FreightSans'; display:inline-block; margin-left: -4px; font-size: 16px; color: #444}
+
+	#search-toggle {display: inline-block; width: 100px; height: 100px; line-height: 101px; text-align: center; font-size: 28px; background-color: #1b264e; color: #217485;}
+	#search-toggle.fa-close {background-color: #315127; color: #bbb390;}
+
+}
+
+@media only screen and (max-width:1440px) {
+
+	/*--------------- #nav ---------------*/
+	#nav-logo {width: 240px;}
+	#nav-logo img {margin: 0;}
+	nav,
+	#nav {margin-right: 125px;}
+	#nav li a {font-size: 16px; margin-left: 15px;}
+	.social-links a {font-size: 22px; margin-left: 15px;}
+
+	#search input {height: 70px; font-size: 20px;}
+	#search input::placeholder {font-size: 20px;}
+	#search button {height: 70px; line-height: 70px; font-size: 20px;}
+	#settings li,
+	.goog-te-menu-value span:first-of-type {font-size: 14px;}
+
 }
 
 @media only screen and (max-width:991px) {
@@ -499,22 +521,41 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
 
+	/*--------------- #slider ---------------*/
+	#slider {height: 650px;}
+	#logo {width: 170px; height: 179px;}
+
+
+	/*--------------- #nav ---------------*/
+	header {text-align: left;}
+	#toggles{text-align:right}
+	#search-toggle-mobile,
+	#nav-toggle{line-height:45px;width:45px;text-align:center;border:1px solid rgba(0,0,0,.15);font-size:20px;border-radius:4px;margin-left:5px;margin-top:25px}
+
 	.toggle,
 	.toggle2,
 	#nav-toggle{display:inline-block;cursor:pointer}
 	.down-arrow{display:none} /* if not hidden above */
-	#nav{display:none}
-	#nav li{float:none;display:block}
+	nav,
+	#nav {width: 100%; background-color: #1b264e;}
+	nav {display: block; margin: 28px 0 0;}
+	#nav{display:none; margin: 15px 0;}
+	#nav li{float:none;display:block;position: relative;}
 	#nav li a,
-	#nav li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#nav li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px; margin: 0; color: #fff;}
 	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2)}
 	#nav li:hover > ul{display:none}
 	#nav ul a,
 	#nav ul span{width:100%}
 	#nav ul ul{left:0}
 	#nav .toggle,
-	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:55px;width:55px;line-height:55px;text-align:center}
+	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center}
 	#nav li li:hover > a{background:none;color:#fff}
+
+	#search {width: calc(100% - 30px); top: calc(100% + 15px); right: 15px;}
+	#search input {height: 50px; font-size: 18px; padding-left: 15px;}
+	#search input::placeholder {font-size: 18px;}
+	#search button {height: 50px; line-height: 50px; font-size: 18px;}
 
 	#flyout{display:none}
 	#flyout li{}
@@ -543,7 +584,12 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 @media only screen and (min-width:480px) and (max-width:767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width:479px) {}
+@media only screen and (max-width:479px) {
+
+	/*--------------- #nav ---------------*/
+	#nav-logo {width: 200px;}
+	
+}
 
 @media print {
 	header,

@@ -94,11 +94,11 @@
 			<a href="./" class="fa fa-at"></a>
 		</div><!-- /.social-links -->
 
-		<div id="settings-drawer">
+		<div id="settings-drawer" class="hidden-sm hidden-xs">
 			<div tabindex="0" id="settings-toggle" class="fa fa-bars"></div><!-- /#search-toggle -->
 			<ul id="settings">
-				<li id="font-increase">font increase</li>
-				<li id="font-decrease">font decrease</li>
+				<li id="font-increase">font increase +</li>
+				<li id="font-decrease">font decrease -</li>
 				<li id="google-translate">
 					<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 					<div id="google_translate_element"></div>
@@ -127,7 +127,7 @@
 			</ul><!-- /#settings -->
 		</div><!-- /#settings-drawer -->
 
-		<div tabindex="0" id="search-toggle" class="fa fa-search"></div><!-- /#search-toggle -->
+		<div tabindex="0" id="search-toggle" class="fa fa-search hidden-sm hidden-xs"></div><!-- /#search-toggle -->
 		<div id="search">
 			<form class="search-form" method="get" action="search.php">
 				<label class="fa fa-search" for="search-input"></label>
@@ -136,7 +136,7 @@
 			</form><!-- /.search-form -->
 		</div><!-- /#search -->
 	</div><!-- /#right-nav -->
-</header><!-- /.clearfix -->
+</header>
 
 <main id="main">
 	<section id="lwp" style="background:url('./_assets_/images/lwp.jpg') center no-repeat;background-size:cover;">
