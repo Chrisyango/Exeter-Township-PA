@@ -298,12 +298,14 @@
 		</section><!-- /#community -->
 
 		<section id="sign-up">
-			<form>
-				<label for="signup-input">Sign-up for Local Updates</label>
-				<input name="q" class="form-control" placeholder="Your Email Address for out e-Newsletter" id="signup-input">
-				<button class="btn">submit</button>
-				<button class="btn">?</button>
-			</form>
+			<div class="container">
+				<form>
+					<label for="signup-input">Sign-up for Local Updates:</label>
+					<input name="q" class="form-control" placeholder="Your Email Address for our e-Newsletter" id="signup-input">
+					<button class="btn">submit</button>
+					<button class="btn">?</button>
+				</form>
+			</div><!-- /.container -->
 		</section><!-- /#sign-up -->
 	</section><!-- /#content -->
 </main>
