@@ -311,7 +311,7 @@
 			nav: true,
 			autoHeight: true,
 			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
-			margin: -45,
+			margin: 30,
 			responsive: {
 				0: {
 					items: lwpItem(1),
@@ -324,7 +324,8 @@
 					loop: false,
 					nav: false,
 					center: true,
-					startPosition: 1
+					startPosition: 1,
+					margin: -45
 				}
 			}
 		});

@@ -267,6 +267,9 @@ nav,
 #lwp-wrapper {padding: 0 85px; margin-top: -43px;}
 #lwp-wrapper .owl-height {height: 563px;}
 #lwp-wrapper .owl-item {transition: all 0.3s;}
+#lwp-wrapper .owl-next,
+#lwp-wrapper .owl-prev {position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 40px; color: #fff;}
+#lwp-wrapper .owl-next {left: unset; right: 0;}
 #lwp-wrapper .center {z-index: 1; transform: translateY(-7.1%);}
 a.lwp-link {position: relative; display: block; width: 430px; height: 520px; border-radius: 2px; text-decoration: none; margin-top: 43px; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 a.lwp-link span:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #1b57ae; width: 200px; height: 200px; z-index: -1; opacity: 0.9; border-radius: 100%; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
@@ -274,17 +277,17 @@ a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-
 
 
 /*--------------- #events-news ---------------*/
-#events-news {position: relative; height: 1121px; margin-top: -30px; padding-top: 30px;}
+#events-news {position: relative; margin-top: -30px; padding-top: 30px;}
 #events-news .overlay {position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: #fff; opacity: 0.9;}
 #events-news a.btn {width: 153px; height: 60px; line-height: 60px; font-family: 'FreightSansBold'; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; background-color: #1b264f; padding: 0;}
 
 #events {padding: 0 72px;}
 #events h2 {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; text-transform: capitalize; color: #1b264f; margin: 81px 8px 44px;}
-#events a.btn {margin: 46px 0 0 13px;}
+#events a.btn {display: block; margin: 46px 0 0 13px;}
 
 #news {padding: 0 84px 0 99px;}
 #news h2 {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; text-transform: capitalize; color: #1b264f; margin: 81px 0 55px -7px;}
-#news a.btn {margin: 31px 0 0 149px;}
+#news a.btn {display: block; margin: 31px 0 0 149px;}
 #news-links .owl-prev,
 #news-links .owl-next {position: absolute; bottom: -91px; left: -1px; background-color: #1b57ae; color: #f3eff5; width: 60px; height: 60px; line-height: 60px; text-align: center; font-size: 20px;}
 #news-links .owl-next {left: 69px;}
@@ -492,9 +495,15 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#search-toggle {display: inline-block; width: 100px; height: 100px; line-height: 101px; text-align: center; font-size: 28px; background-color: #1b264e; color: #217485;}
 	#search-toggle.fa-close {background-color: #315127; color: #bbb390;}
 
+
+	#events-news {height: 1121px;}
 }
 
 @media only screen and (max-width:1440px) {
+
+	/*--------------- #slider ---------------*/
+	#logo {left: 0;}
+
 
 	/*--------------- #nav ---------------*/
 	#nav-logo {width: 240px;}
@@ -509,6 +518,18 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#search button {height: 70px; line-height: 70px; font-size: 20px;}
 	#settings li,
 	.goog-te-menu-value span:first-of-type {font-size: 14px;}
+
+
+	/*--------------- #lwp ---------------*/
+	a.lwp-link {width: auto;}
+
+}
+
+@media only screen and (max-width:1280px) {
+
+	/*--------------- #events-news ---------------*/
+	#events,
+	#news {padding: 0 45px;}
 
 }
 
@@ -566,6 +587,23 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
 
+
+	/*--------------- #lwp ---------------*/
+	#lwp {height: 550px; padding-top: 80px;}
+	a.lwp-link {height: 400px;}
+	a.lwp-link span {font-size: 30px;}
+	a.lwp-link span:before {width: 150px; height: 150px;}
+
+
+	/*--------------- #events-news ---------------*/
+	#events-news {padding-bottom: 50px;}
+	#events,
+	#news {padding: 0;}
+	#events h2,
+	#news h2 {margin: 50px 0; font-size: 44px;}
+	#events a.btn {margin-left: 0;}
+	#news-links .owl-prev {left: 0;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -578,6 +616,18 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
 
+
+	/*--------------- #events-news ---------------*/
+	#events h2,
+	#news h2 {font-size: 40px;}
+
+	#news-links .owl-prev,
+	#news-links .owl-next {bottom: -71px; width: 40px; height: 40px; line-height: 40px; font-size: 18px;}
+	#news-links .owl-next {left: 55px;}
+	#events-news a.btn {font-size: 13px; width: 120px; height: 40px; line-height: 40px;}
+	#news a.btn {margin-left: 120px;}
+	
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -588,7 +638,17 @@ footer {position: relative; z-index: 1; padding: 35px 0;}
 
 	/*--------------- #nav ---------------*/
 	#nav-logo {width: 200px;}
-	
+
+
+	/*--------------- #lwp ---------------*/
+	#lwp {height: 450px;}
+	a.lwp-link {height: 300px;}
+
+
+	/*--------------- #events-news ---------------*/
+	#events h2,
+	#news h2 {font-size: 36px;}
+
 }
 
 @media print {
