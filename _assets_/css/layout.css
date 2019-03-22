@@ -239,7 +239,7 @@ body{overflow-x:hidden}
 
 
 /*--------------- #nav ---------------*/
-header {position: relative; z-index: 100; background-color: #fff; margin-top: -99px; text-align: right; height: 100px;}
+header {position: relative; z-index: 100; background-color: #fff; margin-top: -99px; text-align: right; height: 100px; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 #nav-logo {float: left; height: 100px; overflow:hidden;}
 #nav-logo img {margin-top: -24px;}
 #nav-toggle,
@@ -282,8 +282,8 @@ nav,
 #lwp-wrapper .owl-height {height: 563px;}
 #lwp-wrapper .owl-item {transition: all 0.3s;}
 #lwp-wrapper .center {z-index: 1; transform: translateY(-7.1%);}
-a.lwp-link {position: relative; display: block; width: 430px; height: 520px; border-radius: 2px; text-decoration: none; margin-top: 43px;}
-a.lwp-link span:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #1b57ae; width: 200px; height: 200px; z-index: -1; opacity: 0.9; border-radius: 100%;}
+a.lwp-link {position: relative; display: block; width: 430px; height: 520px; border-radius: 2px; text-decoration: none; margin-top: 43px; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
+a.lwp-link span:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #1b57ae; width: 200px; height: 200px; z-index: -1; opacity: 0.9; border-radius: 100%; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'FreightSansBold'; font-size: 40px; line-height: 36px; letter-spacing: 0.05em; text-transform: uppercase; color: #fff;}
 
 
