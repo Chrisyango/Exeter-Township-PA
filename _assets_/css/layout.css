@@ -543,6 +543,10 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 @media only screen and (max-width:1280px) {
 
+	/*--------------- #slider ---------------*/
+	#slider {height: 800px;}
+
+
 	/*--------------- #events-news ---------------*/
 	#events,
 	#news {padding: 0 45px;}
