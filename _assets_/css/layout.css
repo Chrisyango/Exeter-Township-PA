@@ -333,7 +333,7 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #community:before,
 #community:after {content: ''; position: absolute; top: 218px; left: 0; width: 426px; height: 2px; background-color: #1b264f; opacity: 0.3; z-index: 2;}
 #community:after {left: unset; right: 0;}
-#community-bg {position: absolute; right: 0; top: 0; bottom: 0; width: 954px; opacity: 0.1}
+#community-bg {position: absolute; right: 0; top: -26px; bottom: 0; width: 954px; height: 1250px; opacity: 0.1}
 #community .container {position: relative; z-index: 1; width: 1361px; background-color: #3167b6;}
 #community-info {text-align: center;}
 #community-info h2 {position: relative; font-family: 'FrieghtSansProBold'; font-size: 50px; line-height: 45px; color: #fff; margin-top: 73px;}
@@ -369,13 +369,32 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 
 
 /*--------------- #sign-up ---------------*/
-#sign-up {background-color: #e8eef7; padding: 96px 0 102px;}
+#sign-up {background-color: #e8eef7; padding: 96px 0 91px;}
 #sign-up form {position: relative; text-align: right; margin: 0; padding: 0 29px 0 0;}
 #sign-up label {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; color: #1b264f; display: inline-block; margin: 0 42px 0 0;}
 #sign-up input {position: relative; top: -9px; left: 3px; border: none; border-radius: 0; font-family: 'FreightSansBook'; font-size: 20px; color: #1b264f; display: inline-block; width: 548px; height: 60px; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05); padding: 0 30px;}
 #sign-up input::placeholder {font-family: 'FreightSansBook'; font-size: 20px; color: #1b264f;}
 #sign-up button {font-family: 'FreightSansBold'; font-size: 14px; letter-spacing: 0.1em; padding: 0; margin-top: -6px; width: 120px; height: 60px; line-height: 60px;}
 #sign-up button:last-of-type {margin-left: 7px; width: 60px; font-size: 24px; background-color: #15468c; color: #fff!important;}
+
+
+/*--------------- footer ---------------*/
+footer {position: relative; z-index: 1; padding: 35px 0;}
+#contact-info {font-size: 18px; line-height: 36px; letter-spacing: 0.001em; color: #000000; float: left; margin-left: 4px;}
+#contact-info>span {position: relative; margin-right: 30px;}
+#contact-info>span:not(:last-of-type):after {content: ''; position: absolute; top: 5px; bottom: 1px; right: -18px; width: 2px; background-color: #000; opacity: 0.5;}
+#contact-info span span,
+#contact-info span:last-of-type {font-family: 'FreightSansBook';}
+
+#revize {float: right; font-family: 'FreightSansBook'; font-size: 18px; line-height: 36px; letter-spacing: 0.01em; margin-right: 4px;}
+#revize ul {display: inline-block; margin: 0; padding: 0; position: relative; top: 3px;}
+#revize li {display: inline-block;}
+#revize li a {text-decoration: none; color: #4979be; font-size: 22px; margin-left: 24px;}
+#revize>a {color: #157f1e; text-decoration: none; text-transform: capitalize; margin-left: 70px;}
+#revize span {position: relative; margin-left: 31px;}
+#revize span:after {content: ''; position: absolute; top: 4px; bottom: 2px; left: -18px; width: 2px; background-color: #000; opacity: 0.5;}
+#revize span a {font-family: 'Roboto'; font-weight: 700; text-decoration: none; color: #000; font-size: 20px;}
+
 
 /* -----------------------------------------
 

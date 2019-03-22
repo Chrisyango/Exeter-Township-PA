@@ -313,8 +313,8 @@
 <footer>
 	<div class="container">
 		<section id="contact-info">
-			<span>&copy; 2019 Township of Exeter</span>
-			<span>4975 DeMoss Road, Reading, PA 19606</span>
+			<span><strong>&copy; <span>2019</span> Township of Exeter</strong></span>
+			<span><span>4975</span> DeMoss Road, Reading, PA <span>19606</span></span>
 			<span>(610) 779-5660</span>
 		</section><!-- /#contact-info -->
 
