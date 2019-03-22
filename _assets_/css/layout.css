@@ -395,13 +395,28 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 #inner
 
 -----------------------------------------*/
-#flyout{margin:0;padding:0}
-#flyout li{margin:0;display:block;position:relative}
+#freeform header {margin-top: 0;}
+
+
+/*--------------- #slider ---------------*/
+#freeform #slider {height: 750px;}
+
+
+/*--------------- #flyout ---------------*/
+#side-content {padding-right: 35px;}
+#flyout-wrap {position: relative; height: 1740px;}
+#flyout-wrap .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.9;}
+#flyout-header {position: relative; font-size: 18px; line-height: 38px; letter-spacing: 0.05em; color: #4bb843; text-transform: uppercase; display: inline-block; margin: 65px 0 0 3px;}
+#flyout{margin:16px 0 0 4px;padding:0}
+#flyout>li{margin:0;display:block;position:relative}
+#flyout>li>a,
+#flyout>li>span {font-size: 22px; line-height: 34px; color: #fff;}
 #flyout a,
-#flyout span{text-decoration:none;padding:15px 20px;display:block;border-bottom:1px solid #000}
-#flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#aaa}
+#flyout span{text-decoration:none;padding:0;display:block;}
+#flyout ul {margin:0 0 0 54px;padding:0;}
+#flyout ul li {margin: 0;}
 #flyout ul a,
-#flyout ul span{font-size:13px;padding:10px 15px;width:180px}
+#flyout ul span{font-family: 'FreightSansBook'; font-style: italic; font-size:18px; line-height: 34px; padding:0; color: #28bdb9;}
 #flyout li:hover > ul{display:block}
 
 #breadcrumbs{font-size:13px;text-transform:capitalize}

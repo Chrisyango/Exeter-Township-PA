@@ -341,15 +341,54 @@
 
 	$window.ready(function(){
 
-		//Fixed Nav
-		$(window).bind('scroll', function () {
-			if ($(window).scrollTop() > $('#slider').height() - 99) {
-					$('header').addClass('fixed');
-			} else {
-					$('header').removeClass('fixed');
-			}
-		});
+		if ($('#side-content').length){
+			$('main').css('position','relative');
+			$('<div id="side-background" class="hidden-sm hidden-xs"></div>').prependTo('main');
+		}
 
+		function sideBackground(){
+			$('#side-background').width($('#side-content').outerWidth());
+		}
+		sideBackground();
+		$window.resize(sideBackground);
+
+		// Fill sides script
+		function fillSide(){
+			var windowWidth = $('body').outerWidth();
+			var pixelValue = (windowWidth - $('.container').width()) / 2;
+			$('.fillLeft').css({
+					'margin-left': -pixelValue
+			});
+			
+			$('.fillRight').css({
+					'margin-right': -pixelValue
+			});
+			$('.fillLeft.withPadding').css({
+					'margin-left': -pixelValue,
+					'padding-left': pixelValue
+			});
+			
+			$('.fillRight.withPadding').css({
+					'margin-right': -pixelValue,
+					'padding-right': pixelValue
+			});
+			
+			$('#side-background').width($('#side-content').outerWidth());
+		}
+		fillSide();
+		$window.resize(fillSide);
+
+		//Fixed Nav
+		if ($('#freeform').length === 0) {
+			$(window).bind('scroll', function () {
+				if ($(window).scrollTop() > $('#slider').height() - 99) {
+						$('header').addClass('fixed');
+				} else {
+						$('header').removeClass('fixed');
+				}
+			});
+		}
+		
 		// Font Adjuster
 		function textResizer() {
 			var $base, $baseSize, $dec, $inc;

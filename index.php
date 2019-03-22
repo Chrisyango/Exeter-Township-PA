@@ -6,13 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>SiteName</title>
+	<title>Exeter Township, PA</title>
 	<meta name="description" content="">
 	<meta name="robots" content="index, follow">
 
 	<link rel="stylesheet" href="_assets_/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="_assets_/fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="_assets_/css/animate.min.css">
 	<link rel="stylesheet" href="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700">
 	<link rel="stylesheet" href="_assets_/css/layout.css">
