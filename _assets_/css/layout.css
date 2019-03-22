@@ -305,8 +305,11 @@ a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-
 #departments {position: relative; background-color: #1b264f; height: 324px; padding-top: 37px;}
 #departments .container {width: 1380px;}
 #departments h2 {font-family: 'FreightSansBold'; font-size: 30px; line-height: 48px; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; text-align: center; margin: 28px 0 22px;}
-#departments .whitespace {position: absolute; bottom: -53px; left: 0; width: 100%;z-index: 1}
+#departments .whitespace {position: absolute; top:100%; left: 0; width: 100%;z-index: 1}
 #departments-links .owl-height {height:150px!important;}
+#departments-links .owl-prev,
+#departments-links .owl-next {position: absolute; top: 50%; left: 0; transform: translateY(-85%); font-size: 40px; color:#fff;}
+#departments-links .owl-next {left: unset; right: 0;}
 a.departments-link {text-decoration: none; display: inline-block; margin-top: 30px;}
 a.departments-link:hover span {opacity: 1}
 

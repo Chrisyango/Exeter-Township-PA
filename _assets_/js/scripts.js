@@ -361,7 +361,7 @@
 			margin: 0,
 			responsive: {
 				0: {
-					items: departmentsItem(1),
+					items: departmentsItem(2),
 				},
 				500: {
 					items: departmentsItem(3),
