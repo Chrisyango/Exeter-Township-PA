@@ -157,7 +157,7 @@
 
 			<div class="col-md-8">
 				<article id="entry">
-				<section id="breadcrumbs">
+					<section id="breadcrumbs">
 							<p>
 								<a href="./">
 									home
@@ -194,22 +194,20 @@
 						</span>
 					</div><!-- /#post -->
 				</article><!-- /#entry -->
+
+				<section id="sign-up">
+					<form>
+						<label for="signup-input">Sign-up for Local Updates:</label>
+						<div>
+							<input name="q" class="form-control" placeholder="Your Email Address for our e-Newsletter" id="signup-input">
+							<button class="btn">submit</button>
+							<button class="btn">?</button>
+						</div>
+					</form>
+				</section><!-- /#sign-up -->
 			</div><!-- /.col-md-8 -->
 		</div><!-- /.row -->
 	</div><!-- /.container -->
-
-	<section id="sign-up">
-		<div class="container">
-			<form>
-				<label for="signup-input">Sign-up for Local Updates:</label>
-				<div>
-					<input name="q" class="form-control" placeholder="Your Email Address for our e-Newsletter" id="signup-input">
-					<button class="btn">submit</button>
-					<button class="btn">?</button>
-				</div>
-			</form>
-		</div><!-- /.container -->
-	</section><!-- /#sign-up -->
 </main>
 
 <footer>

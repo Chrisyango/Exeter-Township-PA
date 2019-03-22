@@ -397,14 +397,13 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 -----------------------------------------*/
 #freeform header {margin-top: 0;}
 
-
 /*--------------- #slider ---------------*/
 #freeform #slider {height: 750px;}
 
 
 /*--------------- #flyout ---------------*/
 #side-content {padding-right: 35px;}
-#flyout-wrap {position: relative; height: 1740px;}
+#flyout-wrap {position: relative; height: 1774px;}
 #flyout-wrap .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.9;}
 #flyout-header {position: relative; font-size: 18px; line-height: 38px; letter-spacing: 0.05em; color: #4bb843; text-transform: uppercase; display: inline-block; margin: 65px 0 0 3px;}
 #flyout{margin:16px 0 0 4px;padding:0}
