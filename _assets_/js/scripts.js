@@ -245,16 +245,21 @@
 	}
 
 	// Instafeed Feed
-	if(typeof $.fn.Instafeed !== "undefined"){
+
 		var userFeed = new Instafeed({
 			get: 'user',
-			resolution:'standard_resolution',
-			limit:9,
-			userId: 223202806,
-			accessToken: '3510798482.1677ed0.6b1d53b615784fb19edd3ea90db55b03'
+			userId: 8987997106,
+			clientId: '924f677fa3854436947ab4372ffa688d',
+			accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+			resolution: 'standard_resolution',
+			template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+			sortBy: 'most-recent',
+			limit: 3,
+			links: false,
+			target: 'town'
 		});
 		userFeed.run();
-	}
+	
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){

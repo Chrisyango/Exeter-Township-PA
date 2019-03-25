@@ -276,7 +276,7 @@
 						<div class="current">
 							<div class="facebookfeed active"></div>
 							<div class="twitterfeed"></div>
-							<div class="instafeed"></div>
+							<div id="town" class="instafeed"></div>
 						</div>
 						<div>
 							<div class="facebookfeed active"></div>

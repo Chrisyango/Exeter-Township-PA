@@ -338,7 +338,7 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #community-info ul li a {position: relative; font-size: 20px; line-height: 45px; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: #fff; margin: 0 30px;}
 #community-info ul li.current a {color: #4bb843; text-decoration: underline;}
 #community-info ul li a:hover {text-decoration: underline; color:#4bb843;}
-#community-info ul li:not(:last-of-type) a:after {content: '\2022'; position: absolute; right: -32px; bottom: -8px; font-size: 10px;}
+#community-info ul li:not(:last-of-type) a:after {content: '\2022'; position: absolute; right: -32px; bottom: -8px; font-size: 10px; color: rgba(255,255,255,.3);}
 
 #social-wrapper {padding: 0 64px; margin-top: 33px;}
 .social-feed-element {display: inline-block; font-size: 0; width: 29.06%; margin-right: 6.4%;}
@@ -361,6 +361,9 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 .tweet_list li {background-color: #fff; display: inline-block; width: 29.06%; margin-right: 6.4%; margin-bottom: 0; padding: 16px 10px;}
 .tweet_list li:last-of-type {margin-right: 0;}
 .tweet_text {margin-top: 10px;}
+
+.instafeed a {display: inline-block; width: 29.06%; margin-right: 6.4%;}
+.instafeed a:last-of-type {margin: 0;}
 
 #filter {text-align: center; font-size: 0; padding: 33px 0 37px;}
 #filter span {font-size: 20px; line-height: 45px; letter-spacing: 0.05em; color: #fff; opacity: 0.5; text-transform: uppercase; margin-right: 27px;}
@@ -746,8 +749,10 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#community:after {width: 100px; top: 195px;}
 	#community-info h2 {font-size: 44px;}
 	#community-info h2 span {font-size: 66px;}
+	.instafeed a:last-of-type,
 	.tweet_list li:last-of-type,
 	.social-feed-element:last-of-type {margin-right: auto;}
+	.instafeed a,
 	.tweet_list li,
 	.social-feed-element {display: block; width: 50%; margin: 30px auto;}
 	
@@ -820,6 +825,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#filter {padding-top: 0;}
 	#filter span {font-size: 16px;}
 	#filter li a {font-size: 20px;}
+	.instafeed a,
 	.tweet_list li,
 	.social-feed-element {width: 60%;}
 
@@ -874,6 +880,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	/*--------------- #community ---------------*/
 	#community-info h2 {font-size: 36px;}
 	#community-info h2 span {font-size: 50px;}
+	.instafeed a,
 	.tweet_list li,
 	.social-feed-element {width: 100%;}
 
