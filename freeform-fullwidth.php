@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Exeter Township, PA</title>
+	<title>Exeter Township, PA - Freeform Fullwidth</title>
 	<meta name="description" content="">
 	<meta name="robots" content="index, follow">
 
@@ -77,8 +77,8 @@
 		<div id="settings-drawer" class="hidden-sm hidden-xs">
 			<div tabindex="0" id="settings-toggle" class="fa fa-bars"></div><!-- /#search-toggle -->
 			<ul id="settings">
-				<li id="font-increase">font increase +</li>
-				<li id="font-decrease">font decrease -</li>
+				<li tabindex="0" id="font-increase">font increase +</li>
+				<li tabindex="0" id="font-decrease">font decrease -</li>
 				<li id="google-translate">
 					<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 					<div id="google_translate_element"></div>
@@ -197,14 +197,6 @@
 		</section><!-- /#revize -->
 	</div><!-- /.container -->
 </footer>
-
-<div class="alert alert-dismissible floating-alert fade in os-animation" data-os-animation="fadeInUpBig" data-os-animation-delay="2s" role="alert">
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<h4>Alert Title 30 characters Max</h4>
-	<p>Max 120 characters Max 120 characters Max 120 characters Max 120 characters Max 120 characters Max 120 characters Max 120</p>
-	<p><a href="#" class="btn">Read More</a></p>
-</div><!-- /.alert -->
-
 
 <!-- Share widget make into an include file -->
 <button type="button" class="share-btn floating-share-btn" data-toggle="modal" data-target="#shareModal">

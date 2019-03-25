@@ -435,7 +435,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 #post ul {margin: 0 0 26px 57px; padding: 0;}
 #post ul li {font-size: 18px; line-height: 28px; color: #157f1e; margin: 0;}
 #post img {margin: 11px 0 61px 20px;}
-#post .quote {font-family: 'FreightSansProBold'; font-size: 28px; line-height: 38px; color: #1b57ae; display: block; width: 57%; margin: 0 auto; text-align: center; position: relative; top: 18px; left: -13px;}
+#post .quote {font-family: 'FreightSansProBold'; font-size: 28px; line-height: 38px; color: #1b57ae; display: block; width: 57%; margin: 48px auto 0; text-align: center;}
 
 
 /*--------------- #sign-up ---------------*/
@@ -567,7 +567,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 
 	/*--------------- #entry ---------------*/
-	#entry {margin-left: -149px; margin-top: 80px; padding: 43px 0 88px 59px; background-color: #fff; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);}
+	#entry {margin-left: -149px; margin-top: 80px; padding: 43px 0 70px 59px; background-color: #fff; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);}
 }
 
 @media only screen and (max-width:1440px) {
@@ -657,6 +657,8 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#freeform #formwizziwmorf tr,#freeform #formwizziwmorf tr td{display:block!important}
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
+
+	.floating-share-btn{top:unset;bottom:0;padding:10.5px;font-size:11px}
 
 	/*--------------- #slider ---------------*/
 	#slider {height: 650px;}
@@ -892,6 +894,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	.nav-wrap,
 	.sidebar,
 	#flyout-wrap,
+	#sign-up,
 	.e-notify{display:none!important}
 	a[href]:after{content:none!important}
 }
