@@ -45,7 +45,7 @@
 		<a href="./" id="logo" style="background:url('./_assets_/images/logo.png') center no-repeat;background-size:cover;"></a>
 	</div><!-- /.container -->
 
-	<a href="#main" id="skip" tabindex="0"><img src="./_assets_/images/down-arrow.png" alt="Skip to Content"></a>
+	<a href="#main" id="skip" tabindex="1"><img src="./_assets_/images/down-arrow.png" alt="Skip to Content"></a>
 </section><!-- /#slider -->
 
 <header>
@@ -96,8 +96,8 @@
 		<div id="settings-drawer" class="hidden-sm hidden-xs">
 			<div tabindex="0" id="settings-toggle" class="fa fa-bars"></div><!-- /#search-toggle -->
 			<ul id="settings">
-				<li id="font-increase">font increase +</li>
-				<li id="font-decrease">font decrease -</li>
+				<li tabindex="0" id="font-increase">font increase +</li>
+				<li tabindex="0" id="font-decrease">font decrease -</li>
 				<li id="google-translate">
 					<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 					<div id="google_translate_element"></div>

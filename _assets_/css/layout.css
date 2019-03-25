@@ -248,10 +248,12 @@ header {position: relative; z-index: 100; background-color: #fff; margin-top: -9
 
 nav,
 #nav {display: inline-block; margin: 0; margin-right: 122px; padding: 0; font-size: 0;}
-#nav li {display: inline-block; margin: 0;}
-#nav li a {display: block; font-size: 18px; line-height: 36px; letter-spacing: 0.025em; text-transform: capitalize; text-decoration: none; color: #1b264f; margin-left: 57px; padding: 31px 0 33px;}
+#nav li {position: relative; display: inline-block; margin: 0;}
+#nav>li {margin-left: 57px;}
+#nav li a {display: block; font-size: 18px; line-height: 36px; letter-spacing: 0.025em; text-transform: capitalize; text-decoration: none; color: #1b264f; padding: 31px 0 33px;}
 #nav>li:first-of-type>a {margin: 0;}
 #nav ul {display: none; margin: 0; padding: 0;}
+#nav ul li {display: block;}
 
 #search {display: none; position: absolute; top: 100%; right: 0; width: 433px;}
 #search label {display: none;}
@@ -313,7 +315,7 @@ a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-
 a.departments-link {text-decoration: none; display: inline-block; margin-top: 30px;}
 a.departments-link:hover span {opacity: 1}
 
-a.departments-link span {display: inline-block; margin-top: 25px; font-size: 18px; line-height: 45px; letter-spacing: 0.005em; color: #fff; text-transform: capitalize; width: 150px; opacity: 0; text-align: center;}
+a.departments-link span {display: inline-block; margin-top: 25px; font-size: 18px; line-height: 45px; letter-spacing: 0.005em; color: #fff; text-transform: capitalize; width: 150px; text-align: center;}
 .departments-link-img {position: relative; width: 48px; height: 48px; margin: 0 auto;}
 .departments-link-img:before {content: ''; position: absolute; top: -15px; left: -16px; width: 80px; height: 80px; border: 3px solid #1b57ae; border-radius: 50%;}
 a.departments-link:hover .departments-link-img:before {border: 3px solid #4bb843;}
@@ -524,6 +526,12 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 
 	/*--------------- #nav ---------------*/
+	#nav li:hover>ul {display: block;}
+	#nav ul {position: absolute; top: 100%; left:0; background: #fff;}
+	#nav ul li {text-align: left; width: 150px; padding: 10px 15px; border-bottom: 1px solid rgba(0,0,0,.2);}
+	#nav ul li a {margin: 0; padding: 0; font-size: 15px; line-height: normal;}
+	#nav ul ul {top: 0; left: 100%;}
+	#nav ul ul li a {font-size: 14px;}
 	#right-nav {display: inline-block; position: absolute; top: 0; right: 0; font-size: 0;}
 	.social-links {display: inline-block;}
 	.social-links a {text-decoration: none; color: #1b57ae; font-size: 25px; margin-left: 38px;}
@@ -554,6 +562,10 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#events-news {height: 1121px;}
 
 
+	/*--------------- #departments ---------------*/
+	a.departments-link span {opacity: 0;}
+
+
 	/*--------------- #entry ---------------*/
 	#entry {margin-left: -149px; margin-top: 80px; padding: 43px 0 88px 59px; background-color: #fff; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);}
 }
@@ -568,8 +580,9 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#nav-logo {width: 240px;}
 	#nav-logo img {margin: 0;}
 	nav,
-	#nav {margin-right: 125px;}
-	#nav li a {font-size: 16px; margin-left: 15px;}
+	#nav {margin-right: 120px;}
+	#nav>li {margin-left: 15px;}
+	#nav li a {font-size: 16px;}
 	.social-links a {font-size: 22px; margin-left: 15px;}
 
 	#search input {height: 70px; font-size: 20px;}
@@ -664,7 +677,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#nav {width: 100%; background-color: #1b264e;}
 	nav {display: block; margin: 28px 0 0;}
 	#nav{display:none; margin: 15px 0;}
-	#nav li{float:none;display:block;position: relative;}
+	#nav li{float:none;display:block;margin: 0;}
 	#nav li a,
 	#nav li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px; margin: 0; color: #fff;}
 	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2)}

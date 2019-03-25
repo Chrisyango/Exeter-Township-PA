@@ -456,7 +456,7 @@
 		onScrollInit($('.os-animation'));
 
 		//#Smooth Scrolling
-		$('a[href*=#]:not([href=#],[href*="#collapse"])').click(function() {
+		$('a[href*=#]:not([href=#],[href*="#collapse"])').on('click keypress', function() {
 			if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -464,6 +464,19 @@
 					$('html,body').animate({
 						scrollTop: target.offset().top
 					}, 1000);
+					if (target.selector === "#main") {
+						setTimeout(function() {
+							// Setting 'tabindex' to -1 takes an element out of normal 
+							// tab flow but allows it to be focused via javascript
+							$(target.selector).attr('tabindex', -1).on('blur focusout', function () {
+
+								// when focus leaves this element, 
+								// remove the tabindex attribute
+								$(this).removeAttr('tabindex');
+
+							}).focus(); // focus on the content container
+						}, 1000);
+					}
 					return false;
 				}
 			}
