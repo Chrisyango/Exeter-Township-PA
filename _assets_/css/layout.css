@@ -862,6 +862,8 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	/*--------------- #lwp ---------------*/
 	#lwp {height: 450px;}
 	a.lwp-link {height: 300px;}
+	a.lwp-link span {font-size: 24px;}
+	a.lwp-link span:before {width: 100px; height: 100px;}
 
 
 	/*--------------- #events-news ---------------*/
