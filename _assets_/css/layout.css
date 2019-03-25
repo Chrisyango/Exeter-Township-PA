@@ -358,6 +358,7 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #filter li {display: inline-block; margin: 0;}
 #filter li a {text-decoration: none; color: #1b264f; font-size: 28px; margin: 0 13px; opacity: 0.5}
 #filter li.current a {opacity: 1;}
+#tabs-content>div:not(.current) {display: none;}
 
 
 /*--------------- #sign-up ---------------*/
@@ -396,24 +397,20 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 -----------------------------------------*/
 #freeform header {margin-top: 0;}
-#freeform main {overflow: hidden;}
+#freeform main {overflow: hidden; position: relative;}
 
 /*--------------- #slider ---------------*/
 #freeform #slider {height: 750px;}
 
 
 /*--------------- #flyout ---------------*/
-#side-content {padding-right: 35px;}
-#flyout-wrap {position: relative; height: 1740px;}
-#flyout-wrap .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.9;}
-#flyout-header {position: relative; font-size: 18px; line-height: 38px; letter-spacing: 0.05em; color: #4bb843; text-transform: uppercase; display: inline-block; margin: 65px 0 0 3px;}
-#flyout{margin:16px 0 0 4px;padding:0}
+#flyout{margin: 0; padding:0}
 #flyout>li{margin:0;display:block;position:relative}
 #flyout>li>a,
 #flyout>li>span {font-size: 22px; line-height: 34px; color: #fff;}
 #flyout a,
 #flyout span{text-decoration:none;padding:0;display:block;}
-#flyout ul {margin:0 0 0 54px;padding:0;}
+#flyout ul {margin:0;padding:0;}
 #flyout ul li {margin: 0;}
 #flyout ul a,
 #flyout ul span{font-family: 'FreightSansBook'; font-style: italic; font-size:18px; line-height: 34px; padding:0; color: #28bdb9;}
@@ -430,7 +427,6 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 
 /*--------------- #entry ---------------*/
-#entry {margin-left: -149px; margin-top: 80px; background-color:#fff; padding: 43px 0 88px 59px; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);}
 #entry-bg {position: absolute; top: 12px; right: -160px; bottom: 0px; width: 100%; z-index: -1; opacity: 0.1;}
 #page-title {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; color: #1b264f; text-transform: capitalize; margin: 7px 0 36px;}
 #post p {font-family: 'FreightSansBook'; font-size: 16px; line-height: 28px; color: #000; padding-right: 150px;}
@@ -441,10 +437,16 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 
 /*--------------- #sign-up ---------------*/
-#freeform #sign-up {background-color: transparent; padding: 77px 41px 84px;}
+#freeform #sign-up {background-color: transparent; padding: 77px 41px 83px;}
 #freeform #sign-up label {float: none; margin: 0 0 41px 0;}
 #freeform #sign-up div {float: none;}
 
+
+/*--------------- .fullwidth ---------------*/
+.fullwidth #entry-bg {top: 0px; right: 0;}
+.fullwidth #entry {padding: 15px 15px 30px; margin: 30px 0;}
+.fullwidth #post p {padding: 0;}
+#freeform.fullwidth #sign-up {padding: 15px 0 30px;}
 
 /* -----------------------------------------
 
@@ -533,19 +535,33 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	.goog-te-gadget img{display:none}
 	.goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
 	.goog-te-menu-value span{display:none}
-	.goog-te-menu-value span:first-of-type{font-family: 'FreightSans'; display:inline-block; margin-left: -4px; font-size: 16px; color: #444}
+	.goog-te-menu-value span:first-of-type{font-family: 'FreightSansBold'; display:inline-block; margin-left: -4px; font-size: 16px; color: #444}
 
 	#search-toggle {display: inline-block; width: 100px; height: 100px; line-height: 101px; text-align: center; font-size: 28px; background-color: #1b264e; color: #217485;}
 	#search-toggle.fa-close {background-color: #315127; color: #bbb390;}
 
 
+	/*--------------- #flyout ---------------*/
+	#side-content {padding-right: 35px;}
+	#side-background .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.9;}
+	#side-background {position: absolute; top: 0; bottom: 0;}
+	#flyout-header {position: relative; font-size: 18px; line-height: 38px; letter-spacing: 0.05em; color: #4bb843; text-transform: uppercase; display: inline-block; margin: 65px 0 0 3px;}
+	#flyout ul {margin-left: 54px;}
+	#flyout {margin:16px 0 0 4px;}
+
+
+	/*--------------- #events-news ---------------*/
 	#events-news {height: 1121px;}
+
+
+	/*--------------- #entry ---------------*/
+	#entry {margin-left: -149px; margin-top: 80px; padding: 43px 0 88px 59px; background-color: #fff; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);}
 }
 
 @media only screen and (max-width:1440px) {
 
 	/*--------------- #slider ---------------*/
-	#logo {left: 0;}
+	#logo {top: 15px; left: 15px;}
 
 
 	/*--------------- #nav ---------------*/
@@ -614,6 +630,10 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#revize>a {margin-left: 30px;}
 	#revize span a {font-size: 18px;}
 
+
+	/*--------------- #entry ---------------*/
+	#entry {margin-left: -110px}
+
 }
 
 @media only screen and (max-width:991px) {
@@ -653,7 +673,8 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#nav ul span{width:100%}
 	#nav ul ul{left:0}
 	#nav .toggle,
-	#nav .toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center}
+	#nav .toggle2,
+	#flyout .toggle{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center}
 	#nav li li:hover > a{background:none;color:#fff}
 
 	#search {width: calc(100% - 30px); top: calc(100% + 15px); right: 15px;}
@@ -661,14 +682,19 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#search input::placeholder {font-size: 18px;}
 	#search button {height: 50px; line-height: 50px; font-size: 18px;}
 
+
+	/*--------------- #flyout ---------------*/
 	#flyout{display:none}
-	#flyout li{}
+	#flyout li {display: block;}
 	#flyout li a,
-	#flyout li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
-	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
+	#flyout li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2);display: none;}
 	#flyout ul a,
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
+	#flyout-header {display: none;}
+	#side-content {margin: 15px 0; background-color: #1b264f;}
+	#flyout-toggle {font-size: 18px; color: #fff;padding: 15px;}
 
 
 	/*--------------- #lwp ---------------*/
@@ -694,7 +720,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#community-info h2 {font-size: 44px;}
 	#community-info h2 span {font-size: 66px;}
 	.social-feed-element:last-of-type {margin-right: auto;}
-	.social-feed-element {display: block; width: 100%; margin: 30px auto;}
+	.social-feed-element {display: block; width: 50%; margin: 30px auto;}
 	
 
 	/*--------------- #sign-up ---------------*/
@@ -713,6 +739,22 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#revize {float: none;}
 
 	#revize>a {margin: 0;}
+
+
+	/*--------------- #freeform #slider ---------------*/
+	#freeform #slider {height: 500px;}
+
+
+	/*--------------- #entry ---------------*/
+	#entry {margin-left: 0;}
+	#entry-bg {bottom: unset;}
+	#post p {padding: 0;}
+	#post img {margin-left: 0; margin-bottom: 30px;}
+
+
+	/*--------------- #freeform #sign-up ---------------*/
+	#freeform.fullwidth #sign-up,
+	#freeform #sign-up {margin: 60px -15px 0; padding: 30px 15px; background-color:#e8eef7;}
 
 
 }
@@ -750,7 +792,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#filter span {font-size: 16px;}
 	#filter li a {font-size: 20px;}
 	.social-feed-element:last-of-type {margin-right: auto;}
-	.social-feed-element {display: block; width: 100%; margin: 30px auto;}
+	.social-feed-element {width: 60%;}
 
 	/*--------------- #sign-up ---------------*/
 	#sign-up label {font-size: 40px;}
@@ -760,6 +802,13 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#contact-info,
 	#revize {font-size: 14px;}
 	#revize span a {font-size: 16px;}
+
+
+	/*--------------- inner ---------------*/
+	#flyout-toggle,
+	#breadcrumbs {font-size: 18px;}
+	#page-title {font-size: 44px;}
+	#freeform .quote {font-size: 22px; width: 65%;}
 
 
 }
@@ -794,6 +843,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	/*--------------- #community ---------------*/
 	#community-info h2 {font-size: 36px;}
 	#community-info h2 span {font-size: 50px;}
+	.social-feed-element {width: 100%;}
 
 
 	/*--------------- #sign-up ---------------*/
@@ -808,6 +858,15 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#contact-info>span {display: block; line-height: 20px;}
 	#contact-info>span:after {display: none;}
 
+
+	/*--------------- inner ---------------*/
+	#post ul li,
+	#flyout-toggle,
+	#breadcrumbs {font-size: 16px;}
+	#page-title {font-size: 40px;}
+	#freeform .quote {font-size: 20px; width: 100%;}
+	#post p {font-size: 14px;}
+	
 
 }
 

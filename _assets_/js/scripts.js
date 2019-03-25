@@ -343,7 +343,7 @@
 
 		if ($('#side-content').length){
 			$('main').css('position','relative');
-			$('<div id="side-background" class="hidden-sm hidden-xs"></div>').prependTo('main');
+			$('<div id="side-background" class="hidden-sm hidden-xs" style="background:url(./_assets_/images/flyout-bg.jpg) center no-repeat;background-size:cover;"><div class="overlay"></div></div>').prependTo('main');
 		}
 
 		function sideBackground(){
@@ -373,7 +373,7 @@
 					'padding-right': pixelValue
 			});
 			
-			$('#side-background').width($('#side-content').outerWidth());
+			$('#side-background').width($('#flyout-wrap').outerWidth());
 		}
 		fillSide();
 		$window.resize(fillSide);

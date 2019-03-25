@@ -129,8 +129,7 @@
 	<div class="row">
 		<div class="col-md-4">
 				<aside id="side-content">
-					<div id="flyout-wrap" class="fillLeft withPadding" style="background:url('./_assets_/images/flyout-bg.jpg') center no-repeat;background-size:cover;">
-						<div class="overlay"></div>
+					<div id="flyout-wrap" class="fillLeft withPadding">
 						<span id="flyout-header">department menu</span>
 						<ul id="flyout">
 							<li><a href="./">About</a></li>

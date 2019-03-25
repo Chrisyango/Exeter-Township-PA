@@ -274,8 +274,8 @@
 				<div id="social-wrapper">
 					<div id="tabs-content">
 						<div id="social-feed" class="current"></div>
-						<div id="twitter-feed"></div>
-						<div id="instagram-feed"></div>
+						<div id="twitter-feed">twitter feed</div>
+						<div id="instagram-feed">instagram feed</div>
 					</div><!-- /#tabs-content -->
 				</div><!-- /#social-wrapper -->
 
