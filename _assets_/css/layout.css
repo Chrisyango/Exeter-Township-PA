@@ -590,7 +590,6 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#nav-logo img {margin: 0;}
 	nav,
 	#nav {margin-right: 120px;}
-	#nav>li {margin-left: 15px;}
 	#nav li a {font-size: 16px;}
 	.social-links a {font-size: 22px; margin-left: 15px;}
 
@@ -620,6 +619,10 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 	/*--------------- #slider ---------------*/
 	#slider {height: 800px;}
+
+
+	/*--------------- #nav ---------------*/
+	#nav>li {margin-left: 15px;}
 
 
 	/*--------------- #events-news ---------------*/
@@ -743,7 +746,9 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#community:after {width: 100px; top: 195px;}
 	#community-info h2 {font-size: 44px;}
 	#community-info h2 span {font-size: 66px;}
+	.tweet_list li:last-of-type,
 	.social-feed-element:last-of-type {margin-right: auto;}
+	.tweet_list li,
 	.social-feed-element {display: block; width: 50%; margin: 30px auto;}
 	
 
@@ -815,7 +820,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	#filter {padding-top: 0;}
 	#filter span {font-size: 16px;}
 	#filter li a {font-size: 20px;}
-	.social-feed-element:last-of-type {margin-right: auto;}
+	.tweet_list li,
 	.social-feed-element {width: 60%;}
 
 	/*--------------- #sign-up ---------------*/
@@ -867,6 +872,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 	/*--------------- #community ---------------*/
 	#community-info h2 {font-size: 36px;}
 	#community-info h2 span {font-size: 50px;}
+	.tweet_list li,
 	.social-feed-element {width: 100%;}
 
 
