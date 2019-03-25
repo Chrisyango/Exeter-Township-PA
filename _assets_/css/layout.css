@@ -346,13 +346,20 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 .author-date {padding: 16px 10px;}
 .media-object {margin-right: 8px;}
 .author-title {display: block; font-size: 18px; letter-spacing: 0.01em; color: #1b264f;}
-.time-posted {font-size: 16px; letter-spacing: 0.01em; color: #454955;}
+.tweet_time,
+.time-posted {display: block; font-size: 16px; letter-spacing: 0.01em; color: #454955;}
 .text-wrapper {padding: 0px 30px;}
-.social-feed-text {font-size: 16px; line-height: 26px; letter-spacing: 0.005em; color: #454955; margin-bottom: 0px;}
+.tweet_text,
+.social-feed-text {display: block; font-size: 16px; line-height: 26px; letter-spacing: 0.005em; color: #454955; margin-bottom: 0px;}
 .social-img-container {height: 188px; margin-top: 5px; overflow: hidden;}
 .social-feed-links {padding: 12px 30px;}
 .read-button {font-family: 'FreightSansProBold'; font-size: 16px; line-height: 36px; letter-spacing: 0.01em; text-decoration: none; text-transform: capitalize; color: #454955;}
 .social-feed-links i {font-size: 18px; margin-top: 10px; color: #15468c; float: right;}
+
+.tweet_list {font-size: 0; margin: 0; padding: 0;}
+.tweet_list li {background-color: #fff; display: inline-block; width: 29.06%; margin-right: 6.4%; margin-bottom: 0; padding: 16px 10px;}
+.tweet_list li:last-of-type {margin-right: 0;}
+.tweet_text {margin-top: 10px;}
 
 #filter {text-align: center; font-size: 0; padding: 33px 0 37px;}
 #filter span {font-size: 20px; line-height: 45px; letter-spacing: 0.05em; color: #fff; opacity: 0.5; text-transform: uppercase; margin-right: 27px;}
