@@ -156,6 +156,7 @@
 			</div><!-- col-md-4 -->
 
 			<div class="col-md-8">
+				<div id="entry-bg" style="background:url('./_assets_/images/community.png') center no-repeat;background-size:cover;"></div>
 				<article id="entry">
 					<section id="breadcrumbs">
 							<p>
@@ -165,7 +166,7 @@
 								<a href="./">
 									departments
 								</a>
-								page title
+								<span>page title</span>
 							</p>
 					</section><!-- /#breadcrumbs -->
 					<h1 id="page-title">department headline / page title</h1>

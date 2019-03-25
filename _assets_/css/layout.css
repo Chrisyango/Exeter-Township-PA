@@ -372,7 +372,7 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 
 
 /*--------------- footer ---------------*/
-footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;}
+footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 #contact-info {font-size: 18px; line-height: 36px; letter-spacing: 0.001em; color: #000000; float: left; margin-left: 4px;}
 #contact-info>span {position: relative; margin-right: 30px;}
 #contact-info>span:not(:last-of-type):after {content: ''; position: absolute; top: 5px; bottom: 1px; right: -18px; width: 2px; background-color: #000; opacity: 0.5;}
@@ -396,6 +396,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 -----------------------------------------*/
 #freeform header {margin-top: 0;}
+#freeform main {overflow: hidden;}
 
 /*--------------- #slider ---------------*/
 #freeform #slider {height: 750px;}
@@ -403,7 +404,7 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 
 /*--------------- #flyout ---------------*/
 #side-content {padding-right: 35px;}
-#flyout-wrap {position: relative; height: 1774px;}
+#flyout-wrap {position: relative; height: 1740px;}
 #flyout-wrap .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.9;}
 #flyout-header {position: relative; font-size: 18px; line-height: 38px; letter-spacing: 0.05em; color: #4bb843; text-transform: uppercase; display: inline-block; margin: 65px 0 0 3px;}
 #flyout{margin:16px 0 0 4px;padding:0}
@@ -418,10 +419,32 @@ footer {position: relative; z-index: 1; padding: 35px 0; background-color: #fff;
 #flyout ul span{font-family: 'FreightSansBook'; font-style: italic; font-size:18px; line-height: 34px; padding:0; color: #28bdb9;}
 #flyout li:hover > ul{display:block}
 
-#breadcrumbs{font-size:13px;text-transform:capitalize}
-#breadcrumbs p{margin:0}
-#breadcrumbs a{text-decoration:none}
+
+/*--------------- #breadcrumbs ---------------*/
+#breadcrumbs{font-size:20px;line-height:45px;text-transform:capitalize}
+#breadcrumbs p{font-family:'FreightSansBook'; margin:0;color: #1b57ae;}
+#breadcrumbs span {font-style:italic;text-decoration: underline; text-decoration-color: rgba(27,87,174,0.2);}
+#breadcrumbs a{text-decoration:none;color:#1b264f;}
+#breadcrumbs a:after {content: '>'; margin: 0 12px;}
 #breadcrumbs i{font-size:13px;margin:0 4px}
+
+
+/*--------------- #entry ---------------*/
+#entry {margin-left: -149px; margin-top: 80px; background-color:#fff; padding: 43px 0 88px 59px; box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);}
+#entry-bg {position: absolute; top: 12px; right: -160px; bottom: 0px; width: 100%; z-index: -1; opacity: 0.1;}
+#page-title {font-family: 'FreightSansProBold'; font-size: 50px; line-height: 45px; color: #1b264f; text-transform: capitalize; margin: 7px 0 36px;}
+#post p {font-family: 'FreightSansBook'; font-size: 16px; line-height: 28px; color: #000; padding-right: 150px;}
+#post ul {margin: 0 0 26px 57px; padding: 0;}
+#post ul li {font-size: 18px; line-height: 28px; color: #157f1e; margin: 0;}
+#post img {margin: 11px 0 61px 20px;}
+#post .quote {font-family: 'FreightSansProBold'; font-size: 28px; line-height: 38px; color: #1b57ae; display: block; width: 57%; margin: 0 auto; text-align: center; position: relative; top: 18px; left: -13px;}
+
+
+/*--------------- #sign-up ---------------*/
+#freeform #sign-up {background-color: transparent; padding: 77px 41px 84px;}
+#freeform #sign-up label {float: none; margin: 0 0 41px 0;}
+#freeform #sign-up div {float: none;}
+
 
 /* -----------------------------------------
 
