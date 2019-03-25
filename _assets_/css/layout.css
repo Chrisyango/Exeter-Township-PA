@@ -226,6 +226,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 -----------------------------------------*/
 body{overflow-x:hidden}
 .container {width: 1400px; max-width: 100%;}
+#content {overflow: hidden;}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #skip {position: absolute; bottom: 149px; left: 50%; transform: translateX(-50%); z-index: 100; width: 36px; height: 36px;}
 
