@@ -263,7 +263,7 @@ nav,
 
 
 /*--------------- #lwp ---------------*/
-#lwp {position: relative; height: 830px; padding-top: 160px;z-index: 1;}
+#lwp {position: relative; height: 831px; padding-top: 160px;z-index: 1;}
 #lwp .overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #1b264f; opacity: 0.75;}
 #lwp .whitespace {position: absolute; bottom: 0; left: 0; width: 100%;}
 #lwp-wrapper {padding: 0 85px; margin-top: -43px;}
@@ -273,7 +273,7 @@ nav,
 #lwp-wrapper .owl-prev {position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 40px; color: #fff;}
 #lwp-wrapper .owl-next {left: unset; right: 0;}
 #lwp-wrapper .center {z-index: 1; transform: translateY(-7.1%);}
-a.lwp-link {position: relative; display: block; width: 430px; height: 520px; border-radius: 2px; text-decoration: none; margin-top: 43px; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
+a.lwp-link {position: relative; display: block; width: 430px; height: 521px; border-radius: 2px; text-decoration: none; margin-top: 43px; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 a.lwp-link span:before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #1b57ae; width: 200px; height: 200px; z-index: -1; opacity: 0.9; border-radius: 100%; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 a.lwp-link span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'FreightSansBold'; font-size: 40px; line-height: 36px; letter-spacing: 0.05em; text-transform: uppercase; color: #fff;}
 
@@ -359,8 +359,9 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 #filter ul {display: inline-block; margin: 0; padding: 0; position: relative; top: 3px; left: -9px;}
 #filter li {display: inline-block; margin: 0;}
 #filter li a {text-decoration: none; color: #1b264f; font-size: 28px; margin: 0 13px; opacity: 0.5}
-#filter li.current a {opacity: 1;}
+#filter li.active a {opacity: 1;}
 #tabs-content>div:not(.current) {display: none;}
+#tabs-content>div.current>div:not(.active) {display: none;}
 
 
 /*--------------- #sign-up ---------------*/

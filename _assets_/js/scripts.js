@@ -209,23 +209,31 @@
 
 	// Tabs
 	$('#tabs li a').on('click keypress', function(e) {
-		$('#tabs li, #tabs-content .current').removeClass('current').removeClass('fadeInLeft');
-		$(this).parent().addClass('current');
-
-		var currentTab = $(this).attr('href');
-		
 		e.preventDefault();
-		$(currentTab).addClass('current animated fadeInLeft');
-		$(currentTab).find('h2').focus();
+		$('#tabs li, #tabs-content .current').removeClass('current');
+		$(this).parent().addClass('current');
+		$('#tabs-content > div').eq($(this).parent().index()).addClass('current');
+		let filterIndex = $('#filter li').index($('#filter li.active'));
+		$('#tabs-content .active').removeClass('active');
+		$('#tabs-content > div.current > div').eq(filterIndex).addClass('active');
+		$('#tabs-content > div.current > div.active a:first-of-type').focus();
 	})
+
+	$('#filter li a').on('click keypress', function(e) {
+		e.preventDefault();
+		$('.active').removeClass('active');
+		$(this).parent().addClass('active');
+		$('#tabs-content > div.current > div').eq($(this).parent().index()).addClass('active');
+		$('#tabs-content > div.current > div.active a:first-of-type').focus();
+	});
 
 	// Twitter Feed
 	if(typeof $.fn.tweet !== "undefined"){
-		$("#twitterfeed").tweet({
+		$(".twitterfeed").tweet({
 			modpath: '_assets_/plugins/twitter/',
 			username: "RevizeSoftware",
 			join_text: "auto",
-			avatar_size: 0,
+			avatar_size: 30,
 			count: 1,
 			auto_join_text_default: "",
 			auto_join_text_ed: "",
@@ -243,7 +251,7 @@
 			resolution:'standard_resolution',
 			limit:9,
 			userId: 223202806,
-			accessToken: '303202123.f7e9b72.27c687fbd9c24ecbb29dc92951cdf724'
+			accessToken: '3510798482.1677ed0.6b1d53b615784fb19edd3ea90db55b03'
 		});
 		userFeed.run();
 	}
@@ -413,19 +421,25 @@
 
 		// Social Feed
 		if ( typeof $.fn.socialfeed !== "undefined"){
-			$('#social-feed').socialfeed({
+			$('.facebookfeed').socialfeed({
 					// Facebook
 					facebook:{
-							accounts: ['@spanishforklibrary'],
-							limit: 3,
-							access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
+						accounts: ['@spanishforklibrary'],
+						limit: 3,
+						access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
 					},
-					template: "_assets_/templates/template.html",
-					length: 45,
-					show_media: true,
-					callback:function(){
-					}
-			});
+					// twitter:{
+					// 	accounts:['@huttotx'],
+					// 	limit: 3,
+					// 	consumer_key: '5Opdt1ag5PdinwBoJAGRqH072',
+					// 	consumer_secret: '8Jrs3Ifg0K7KEcVpn6ILmCMhCpsB2JbGsvieOSaD4Ixx8ge845'
+					// },
+						template: "_assets_/templates/template.html",
+						length: 45,
+						show_media: true,
+						callback:function(){
+						}
+				});
 		}
 
 		// Animations http://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css

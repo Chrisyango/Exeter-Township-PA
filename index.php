@@ -264,7 +264,7 @@
 			<div class="container">
 				<div id="community-info">
 					<h2><span>get social</span>Connect with the Community</h2>
-					<ul id="tabs1">
+					<ul id="tabs">
 						<li class="current"><a href="./">the township</a></li>
 						<li><a href="./">police department</a></li>
 						<li><a href="./">parks + recreation</a></li>
@@ -273,16 +273,28 @@
 
 				<div id="social-wrapper">
 					<div id="tabs-content">
-						<div id="social-feed" class="current"></div>
-						<div id="twitter-feed">twitter feed</div>
-						<div id="instagram-feed">instagram feed</div>
+						<div class="current">
+							<div class="facebookfeed active"></div>
+							<div class="twitterfeed"></div>
+							<div class="instafeed"></div>
+						</div>
+						<div>
+							<div class="facebookfeed active"></div>
+							<div class="twitterfeed"></div>
+							<div class="instafeed"></div>
+						</div>
+						<div>
+							<div class="facebookfeed active"></div>
+							<div class="twitterfeed"></div>
+							<div class="instafeed"></div>
+						</div>
 					</div><!-- /#tabs-content -->
 				</div><!-- /#social-wrapper -->
 
 				<div id="filter">
 					<span>filter:</span>
-					<ul id="tabs">
-						<li class="current"><a href="#social-feed" class="fa fa-facebook"></a></li>
+					<ul>
+						<li class="active"><a href="#social-feed" class="fa fa-facebook"></a></li>
 						<li><a href="#twitter-feed" class="fa fa-twitter"></a></li>
 						<li><a href="#instagram-feed" class="fa fa-instagram"></a></li>
 					</ul><!-- /#tabs -->
