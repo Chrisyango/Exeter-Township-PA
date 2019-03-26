@@ -273,7 +273,7 @@
 	}
 
 	// Instafeed Feed
-	// if(typeof $.fn.Instafeed !== "undefined"){
+	if(typeof $.fn.Instafeed !== "undefined"){
 		var townFeed = new Instafeed({
 			get: 'user',
 			userId: 8987997106,
@@ -315,7 +315,7 @@
 		// 	target: 'township-insta'
 		// });
 		// parksFeed.run();
-	// }
+	}
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
