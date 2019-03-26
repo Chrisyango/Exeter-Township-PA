@@ -273,7 +273,7 @@
 	}
 
 	// Instafeed Feed
-	if(typeof $.fn.Instafeed !== "undefined"){
+	if(typeof(window.Instafeed) === "function"){
 		var townFeed = new Instafeed({
 			get: 'user',
 			userId: 8987997106,
