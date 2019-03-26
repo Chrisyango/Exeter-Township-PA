@@ -685,11 +685,12 @@ footer{position:relative;z-index:1;padding:35px 0;background-color:#fff;box-shad
 	header{text-align:left}
 	#toggles{text-align:right}
 	#search-toggle-mobile,
-	#nav-toggle{line-height:45px;width:45px;text-align:center;border:1px solid rgba(0,0,0,.15);font-size:20px;border-radius:4px;margin-left:5px;margin-top:25px}
+	#nav-toggle{border:1px solid rgba(0,0,0,.15);font-size:20px;border-radius:4px;margin-left:5px;margin-top:25px;cursor:pointer}
 
 	.toggle,
 	.toggle2,
-	#nav-toggle{display:inline-block;cursor:pointer}
+	#search-toggle-mobile,
+	#nav-toggle{display:inline-block;cursor:pointer;height:45px;width:45px;line-height:45px;text-align:center}
 	.down-arrow{display:none} /* if not hidden above */
 	nav,
 	#nav{width:100%;background-color:#1b264e}
@@ -705,7 +706,7 @@ footer{position:relative;z-index:1;padding:35px 0;background-color:#fff;box-shad
 	#nav ul ul{left:0}
 	#nav .toggle,
 	#nav .toggle2,
-	#flyout .toggle{position:absolute;right:0;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center}
+	#flyout .toggle{position:absolute;right:0;top:0;background:rgba(0,0,0,.2)}
 	#nav li li:hover > a{background:none;color:#fff}
 
 	#search{width:calc(100% - 30px);top:calc(100% + 15px);right:15px}
@@ -725,7 +726,7 @@ footer{position:relative;z-index:1;padding:35px 0;background-color:#fff;box-shad
 	#flyout li:hover > ul{display:none}
 	#flyout-header{display:none}
 	#side-content{margin:15px 0;background-color:#1b264f}
-	#flyout-toggle{font-size:18px;color:#fff;padding:15px}
+	#flyout-toggle{font-size:18px;color:#fff;padding:15px;cursor:pointer}
 
 
 	/*--------------- #lwp ---------------*/
