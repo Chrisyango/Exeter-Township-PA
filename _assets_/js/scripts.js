@@ -217,7 +217,7 @@
 		$('#tabs-content .active').removeClass('active');
 		$('#tabs-content > div.current > div').eq(filterIndex).addClass('active');
 		$('#tabs-content > div.current > div.active a:first-of-type').focus();
-	})
+	});
 
 	$('#filter li a').on('click keypress', function(e) {
 		e.preventDefault();
@@ -229,7 +229,7 @@
 
 	// Twitter Feed
 	if(typeof $.fn.tweet !== "undefined"){
-		$(".twitterfeed").tweet({
+		$("#township-twitter").tweet({
 			modpath: '_assets_/plugins/twitter/',
 			username: "RevizeSoftware",
 			join_text: "auto",
@@ -242,24 +242,80 @@
 			auto_join_text_url: "",
 			loading_text: "Loading Tweet..."
 		});
+
+		// $(".twitterfeed").tweet({
+		// 	modpath: '_assets_/plugins/twitter/',
+		// 	username: "RevizeSoftware",
+		// 	join_text: "auto",
+		// 	avatar_size: 50,
+		// 	count: 3,
+		// 	auto_join_text_default: "",
+		// 	auto_join_text_ed: "",
+		// 	auto_join_text_ing: "",
+		// 	auto_join_text_reply: "",
+		// 	auto_join_text_url: "",
+		// 	loading_text: "Loading Tweet..."
+		// });
+
+		// $(".twitterfeed").tweet({
+		// 	modpath: '_assets_/plugins/twitter/',
+		// 	username: "RevizeSoftware",
+		// 	join_text: "auto",
+		// 	avatar_size: 50,
+		// 	count: 3,
+		// 	auto_join_text_default: "",
+		// 	auto_join_text_ed: "",
+		// 	auto_join_text_ing: "",
+		// 	auto_join_text_reply: "",
+		// 	auto_join_text_url: "",
+		// 	loading_text: "Loading Tweet..."
+		// });
 	}
 
 	// Instafeed Feed
-
-		var userFeed = new Instafeed({
+	// if(typeof $.fn.Instafeed !== "undefined"){
+		var townFeed = new Instafeed({
 			get: 'user',
 			userId: 8987997106,
 			clientId: '924f677fa3854436947ab4372ffa688d',
 			accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
 			resolution: 'standard_resolution',
-			template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+			template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{caption}}</span></a>',
 			sortBy: 'most-recent',
 			limit: 3,
 			links: false,
-			target: 'town'
+			target: 'township-instagram'
 		});
-		userFeed.run();
-	
+		townFeed.run();
+
+		// var policeFeed = new Instafeed({
+		// 	get: 'user',
+		// 	userId: 8987997106,
+		// 	clientId: '924f677fa3854436947ab4372ffa688d',
+		// 	accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+		// 	resolution: 'standard_resolution',
+		// 	template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+		// 	sortBy: 'most-recent',
+		// 	limit: 3,
+		// 	links: false,
+		// 	target: 'township-insta'
+		// });
+		// policeFeed.run();
+
+		// var parksFeed = new Instafeed({
+		// 	get: 'user',
+		// 	userId: 8987997106,
+		// 	clientId: '924f677fa3854436947ab4372ffa688d',
+		// 	accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+		// 	resolution: 'standard_resolution',
+		// 	template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+		// 	sortBy: 'most-recent',
+		// 	limit: 3,
+		// 	links: false,
+		// 	target: 'township-insta'
+		// });
+		// parksFeed.run();
+	// }
 
 	// bxSlider
 	if(typeof $.fn.bxSlider !== "undefined"){
@@ -426,25 +482,45 @@
 
 		// Social Feed
 		if ( typeof $.fn.socialfeed !== "undefined"){
-			$('.facebookfeed').socialfeed({
-					// Facebook
-					facebook:{
-						accounts: ['@spanishforklibrary'],
-						limit: 3,
-						access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
-					},
-					// twitter:{
-					// 	accounts:['@huttotx'],
-					// 	limit: 3,
-					// 	consumer_key: '5Opdt1ag5PdinwBoJAGRqH072',
-					// 	consumer_secret: '8Jrs3Ifg0K7KEcVpn6ILmCMhCpsB2JbGsvieOSaD4Ixx8ge845'
-					// },
-						template: "_assets_/templates/template.html",
-						length: 45,
-						show_media: true,
-						callback:function(){
-						}
-				});
+			$('#township-facebook').socialfeed({
+				// Facebook
+				facebook:{
+					accounts: ['@spanishforklibrary'],
+					limit: 3,
+					access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
+				},
+					template: "_assets_/templates/template.html",
+					length: 45,
+					show_media: true,
+					callback:function(){
+					}
+			});
+
+			// $('#police-facebook').socialfeed({
+			// 	facebook:{
+			// 		accounts: ['@spanishforklibrary'],
+			// 		limit: 3,
+			// 		access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
+			// 	},
+			// 		template: "_assets_/templates/template.html",
+			// 		length: 45,
+			// 		show_media: true,
+			// 		callback:function(){
+			// 		}
+			// });
+
+			// $('#parks-facebook').socialfeed({
+			// 	facebook:{
+			// 		accounts: ['@spanishforklibrary'],
+			// 		limit: 3,
+			// 		access_token: 'EAAMkcCLFBs8BAEnpzLa3fg98gku0FhSwmvKZAujQ5m6RLRlHnIUnPaAexISWwIMA4VEoHuFUEWufVXIsasnQFRaDys2613NJUqt5sE5FqAr1sYrgnLZBPgeDmP8cZAkv7sFZBQOxUdrz2B7udHItF8tNMWiZC5iJfqkmWWK06BQZDZD'
+			// 	},
+			// 		template: "_assets_/templates/template.html",
+			// 		length: 45,
+			// 		show_media: true,
+			// 		callback:function(){
+			// 		}
+			// });
 		}
 
 		// Animations http://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css

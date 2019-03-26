@@ -274,19 +274,19 @@
 				<div id="social-wrapper">
 					<div id="tabs-content">
 						<div class="current">
-							<div class="facebookfeed active"></div>
-							<div class="twitterfeed"></div>
-							<div id="town" class="instafeed"></div>
+							<div id="township-facebook" class="facebookfeed active"></div>
+							<div id="township-twitter" class="twitterfeed"></div>
+							<div id="township-instagram" class="instafeed"></div>
 						</div>
 						<div>
-							<div class="facebookfeed active"></div>
-							<div class="twitterfeed"></div>
-							<div class="instafeed"></div>
+							<div id="police-facebook" class="facebookfeed active"></div>
+							<div id="police-twitter" class="twitterfeed"></div>
+							<div id="police-instagram" class="instafeed"></div>
 						</div>
 						<div>
-							<div class="facebookfeed active"></div>
-							<div class="twitterfeed"></div>
-							<div class="instafeed"></div>
+							<div id="parks-facebook" class="facebookfeed active"></div>
+							<div id="parks-twitter" class="twitterfeed"></div>
+							<div id="parks-instagram" class="instafeed"></div>
 						</div>
 					</div><!-- /#tabs-content -->
 				</div><!-- /#social-wrapper -->

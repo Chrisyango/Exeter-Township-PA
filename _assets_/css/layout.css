@@ -362,7 +362,8 @@ a.departments-link:hover .departments-link-img:after {content: ''; position: abs
 .tweet_list li:last-of-type {margin-right: 0;}
 .tweet_text {margin-top: 10px;}
 
-.instafeed a {display: inline-block; width: 29.06%; margin-right: 6.4%;}
+.instafeed a {display: inline-block; width: 29.06%; margin-right: 6.4%; background-color: #fff; font-size: 16px; line-height: 26px; letter-spacing: 0.005em; color: #454955; text-decoration: none;}
+.instafeed a span {display: block; padding: 10px 30px;}
 .instafeed a:last-of-type {margin: 0;}
 
 #filter {text-align: center; font-size: 0; padding: 33px 0 37px;}
