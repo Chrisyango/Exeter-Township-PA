@@ -410,6 +410,19 @@
 
 	$window.ready(function(){
 
+		// Translate
+		$('#google_translate_element').on('DOMNodeInserted', function(event) {
+			let translateText = $('.goog-te-menu-value span:first').text();
+			if (translateText !== 'Translate ') {
+				$('.goog-te-menu-value span:first').html('Translate <i class="fa fa-chevron-down"></i>');
+				$('.goog-te-menu-frame.skiptranslate').load(function(){
+					setTimeout(function(){
+						$('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('Translate <i class="fa fa-chevron-down"></i>');    
+					}, 100);
+				});
+			}
+		});
+
 		if ($('#side-content').length){
 			$('main').css('position','relative');
 			$('<div id="side-background" class="hidden-sm hidden-xs" style="background:url(./_assets_/images/flyout-bg.jpg) center no-repeat;background-size:cover;"><div class="overlay"></div></div>').prependTo('main');
