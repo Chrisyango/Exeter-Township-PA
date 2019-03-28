@@ -35,6 +35,7 @@
 
 </head>
 <body id="homepage">
+<a href="#main" id="skip" tabindex="1">SKIP TO CONTENT</a>
 
 <section id="slider">
 	<ul class="bxslider">
@@ -45,12 +46,13 @@
 		<a href="./" id="logo" style="background:url('./_assets_/images/logo.png') center no-repeat;background-size:cover;"></a>
 	</div><!-- /.container -->
 
-	<a href="#main" id="skip" tabindex="1"><img src="./_assets_/images/down-arrow.png" alt="Skip to Content"></a>
+	<a href="#main" id="skip-btn" tabindex="1"><img src="./_assets_/images/down-arrow.png" alt="Skip to Content"></a>
 </section><!-- /#slider -->
 
 <header>
 	<div class="container">
 		<a href="./" id="nav-logo">
+		<h1 class="sr-only">Exeter Township</h1>
 			<img src="./_assets_/images/nav-logo.png" alt="Logo">
 		</a><!-- /.logo -->
 
@@ -158,43 +160,43 @@
 					<h2>news & announcements</h2>
 					<div id="news-links" class="owl-carousel">
 						<div class="news-link-wrapper">
-							<div class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
+							<a href="./" class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
 									<span>january 01, 2019</span>
 									<h3>2019 prelimary budget posted</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
-									<a href="./" class="fa fa-facebook"></a>
+									<div style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></div>
+									<i class="fa fa-facebook"></i>
 								</div><!-- /.news-link-content -->
-							</div><!-- /.news-link -->
-							<div class="news-link" style="background:url('./_assets_/images/news2.jpg') center no-repeat;background-size:cover;">
+							</a><!-- /.news-link -->
+							<a href="./" class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
-									<span>january 09, 2019</span>
+									<span>january 01, 2019</span>
 									<h3>protect your home - 2019 resident safety</h3>
-									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
-									<a href="./" class="fa fa-facebook"></a>
+									<div style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></div>
+									<i class="fa fa-facebook"></i>
 								</div><!-- /.news-link-content -->
-							</div><!-- /.news-link -->
+							</a><!-- /.news-link -->
 						</div><!-- /.news-link-wrapper -->
 						<div class="news-link-wrapper">
-							<div class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
+							<a href="./" class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
 									<span>january 01, 2019</span>
 									<h3>2019 prelimary budget posted</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
-									<a href="./" class="fa fa-facebook"></a>
+									<div style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></div>
+									<i class="fa fa-facebook"></i>
 								</div><!-- /.news-link-content -->
-							</div><!-- /.news-link -->
-							<div class="news-link" style="background:url('./_assets_/images/news2.jpg') center no-repeat;background-size:cover;">
+							</a><!-- /.news-link -->
+							<a href="./" class="news-link" style="background:url('./_assets_/images/news1.jpg') center no-repeat;background-size:cover;">
 								<div class="news-link-content">
-									<span>january 09, 2019</span>
-									<h3>protect your home - 2019 resident safety</h3>
-									<p>test test test test</p>
-									<a href="./" style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></a>
-									<a href="./" class="fa fa-facebook"></a>
+									<span>january 01, 2019</span>
+									<h3>2019 prelimary budget posted</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div style="background:url('./_assets_/images/right-arrow.png') center no-repeat;background-size:cover;"></div>
+									<i class="fa fa-facebook"></i>
 								</div><!-- /.news-link-content -->
-							</div><!-- /.news-link -->
+							</a><!-- /.news-link -->
 						</div><!-- /.news-link-wrapper -->
 					</div><!-- /#news-links.owl-carousel -->
 					<a href="./" class="btn">archives</a>
@@ -250,6 +252,7 @@
 		<section id="community">
 			<div id="community-bg" style="background:url('./_assets_/images/community.png') center no-repeat;background-size:cover;"></div>
 			<div class="container">
+			<div class="line"></div>
 				<div id="community-info">
 					<h2><span>get social</span>Connect with the Community</h2>
 					<ul id="tabs">
@@ -259,7 +262,7 @@
 					</ul><!-- /#tabs -->
 				</div><!-- #community-info -->
 
-				<div id="social-wrapper">
+				<div id="social-wrapper" class="clearfix">
 					<div id="tabs-content">
 						<div class="current">
 							<div id="township-facebook" class="facebookfeed active"></div>
@@ -319,7 +322,7 @@
 				<li><a href="./" class="fa fa-exclamation-triangle"></a></li>
 			</ul>
 			<a href="./">login</a>
-			<span>Powered by <a href="./">revize.</a></span>
+			<span>Powered by <a href="./">revize.</a> the Government Website Experts</span>
 		</section><!-- /#revize -->
 	</div><!-- /.container -->
 </footer>
@@ -399,6 +402,7 @@
 <script src="_assets_/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="_assets_/plugins/twitter/js/jquery.tweet.min.js"></script>
 <script src="_assets_/plugins/instafeed/instafeed.min.js"></script>
+<script src="_assets_/plugins/matchHeight/dist/jquery.matchHeight-min.js"></script>
 <script src="_assets_/js/scripts.js"></script>
 
 </body>
