@@ -460,13 +460,27 @@
 		fillSide();
 		$window.resize(fillSide);
 
-		//Fixed Nav
+		//Nav
 		if ($('#freeform').length === 0) {
 			$(window).bind('scroll', function () {
 				if ($(window).scrollTop() > $('#slider').height() - 99) {
 						$('header').addClass('fixed');
 				} else {
 						$('header').removeClass('fixed');
+				}
+
+				if ($(window).scrollTop() > $('#slider').height() / 2) {
+					$('#nav ul').addClass('drop-down');
+					$('#nav ul ul').css({
+						'top' : '0',
+						'bottom' : 'unset'
+					});
+				} else {
+					$('#nav ul').removeClass('drop-down');
+					$('#nav ul ul').css({
+						'top' : 'unset',
+						'bottom' : '0'
+					});
 				}
 			});
 		}

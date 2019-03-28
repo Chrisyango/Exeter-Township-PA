@@ -241,6 +241,7 @@ body{overflow-x:hidden}
 
 /*--------------- #nav ---------------*/
 header{position:relative;z-index:100;background-color:#fff;margin-top:-99px;text-align:right;box-shadow:0px 5px 25px 0px rgba(0, 0, 0, 0.15)}
+.drop-down{top:100%;bottom:unset!important}
 #nav-logo{float:left;height:100px;overflow:hidden}
 #nav-logo img{margin-top:-24px}
 #nav-toggle,
@@ -540,10 +541,11 @@ footer{position:relative;z-index:1;padding:35px 0;background-color:#fff;box-shad
 
 	/*--------------- #nav ---------------*/
 	#nav li:hover>ul{display:block}
-	#nav ul{position:absolute;top:100%;left:0;background:#fff}
+	#nav ul{position:absolute;bottom:100%;left:0;background:#1b264e}
 	#nav ul li{text-align:left;width:150px;padding:10px 15px;border-bottom:1px solid rgba(0,0,0,.2)}
-	#nav ul li a{margin:0;padding:0;font-size:15px;line-height:normal}
-	#nav ul ul{top:0;left:100%}
+	#nav ul li span,
+	#nav ul li a{margin:0;padding:0;font-size:15px;line-height:normal;color:#fff}
+	#nav ul ul{bottom:0;left:100%}
 	#nav ul ul li a{font-size:14px}
 	#right-nav{display:inline-block;position:absolute;top:0;right:0;font-size:0}
 	.social-links{display:inline-block}
